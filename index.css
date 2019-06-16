@@ -1,0 +1,21 @@
+.paragraphStyle.className{
+	color:purple;
+}
+.paragraphStyle{
+	color:black;
+}
+#idName{
+color:blue;
+}
+.className{	
+	color:green;
+}
+p{
+	color:red;
+}
+.nesting .className{
+color:yellow;
+}
+.nesting .nesting .className{
+color:orange;
+}
