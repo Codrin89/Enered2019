@@ -1,3 +1,5 @@
 # Enered2019
 
-THIS IS MY FIRST COMMIT
+Helpers: 
+- https://www.codecademy.com/
+- https://www.freecodecamp.org/
