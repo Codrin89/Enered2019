@@ -1,0 +1,30 @@
+div{
+	height: 50px;
+}
+.red{
+	background: red;	
+  }
+.yellow{
+	background: yellow; 
+}
+.blue{
+	background: blue;
+}
+.yellow:hover {
+	background: pink;
+}
+body div:first-child {
+	background: purple;
+}
+body div:last-child {
+	background: pink;
+}
+body div:nth-child(2n) {
+	background: cyan;
+}
+body:before{
+	content:"before";
+}
+body:after{
+	content: "after";
+}

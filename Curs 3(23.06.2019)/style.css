@@ -1,0 +1,45 @@
+p{
+	  color: red;
+}
+p {
+       color: blue;	  
+}
+ .paragraph /*class name*/ {
+ 	color: green;
+ }
+ #paragraph /*id name*/ {
+ 	 color: purple;
+}
+
+p.paragraph {
+	 color: yellow; 
+}
+.paragraph.text.blaa {
+	  color: cyan;  
+}
+p.paragraph.text.blaa {
+	 color: pink;
+}	
+
+.container .card1 {
+	 background: pink;
+}
+.container .card2 {
+      background: black; 
+}
+.container .card1 .text1 {
+	 color: black;
+}
+.container .card2 .text1 {
+      color: purple;  
+}
+.container .card1 .text1,
+.container .card3 .text24 {
+	font-size: 40px
+}
+
+body > p {
+	color: black !important;  
+}
+     
+ 
