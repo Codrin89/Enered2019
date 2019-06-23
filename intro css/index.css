@@ -1,0 +1,38 @@
+p {
+	color:red;
+}
+.paragraph /*class name*/ {
+	color: green;
+}
+#paragraph /*id name*/ {
+	color: purple;
+}
+
+p.paragraph {
+	color: yellow;
+}
+.paragraph.text.something {
+	color: cyan;
+}
+p.paragraph.text.something {
+	color: blue;
+}
+.container .card1 /*space means nesting*/ {
+	background: blue;
+}
+.container .card2 {
+	background: blue;
+}
+.container .card1 .text1/*space means nesting*/ {
+	color: green;
+}
+.container .card2 .text1{
+	color: yellow;
+}
+.container .card1 .text1,
+.container .card3 .text24 {
+	font-size: 40px;
+}
+body > p {
+	color: black !important;
+}
