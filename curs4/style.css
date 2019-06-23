@@ -1,0 +1,56 @@
+p{
+	color: red ;
+}
+p{
+	color: black;
+}
+.paragraph{
+	color: green;
+}
+#paragraph{
+	color: #f3a683;
+}
+p.paragraph{
+	color: yellow;
+}
+.paragraph.text{
+	color: purple;
+}
+p.paragraph.text{
+	color: cyan;
+}
+.card1, .card3 {
+	font-weight: bold;
+}
+.container .card1, .card2, .card4 {
+	background: red;
+}
+
+/*------------------------*/
+
+.container .card1{
+	background: yellow;
+}
+.container .card2{
+	background: red;
+}
+.container .card3{
+	background: orange;
+}
+.container .card4{
+	background: green;
+}
+
+ /*------------------------*/
+
+ .container .card1, 
+ .container .card3{
+ 	font-size: 30px;
+ }
+ .container .card2,
+ .container .card4{
+ 	font-size: 20px;
+ }
+ body > div{
+ 	color: #c44569 !important;
+ }

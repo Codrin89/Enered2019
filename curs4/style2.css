@@ -1,0 +1,38 @@
+div{
+	height: 50px; 
+}
+.red{
+	background: red;
+}
+.yellow{
+	background: yellow;
+}
+.blue{
+	background: blue;
+}
+/*-------------------------*/
+div:hover{
+	transition: 0.1s; 
+}
+.red:hover{
+	background: transparent;
+}
+.yellow:hover{
+	background: transparent;
+}
+.blue:hover{
+	background: transparent;
+}
+div:nth-child(1){
+	background: red;
+}
+div:first-child{
+	background: green;
+}
+body:before{
+	content: ' ';
+
+}
+body:after{
+	content: ' ';
+}
