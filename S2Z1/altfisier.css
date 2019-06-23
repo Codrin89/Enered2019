@@ -1,0 +1,28 @@
+* {
+	/*universal selector*/
+	margin: 0;
+	padding: 0;
+}
+.cards {
+	width: 50px;
+	height: 50px;
+	background: blue;
+	margin: 10px;
+}
+.inside-card {
+	width: 20px;
+	height: 20px;
+	background: red;
+	display: inline-block;
+}
+.card2 {
+	width: auto;
+	height: auto;
+	max-width: 500px;
+}
+.card2 p {
+	max-width: 50%;
+} 
+.card3 {
+	width: 50vw;
+}
