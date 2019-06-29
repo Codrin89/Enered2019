@@ -1,0 +1,15 @@
+.container {
+	height: 300px;
+	width: 100%;
+	border: 1px solid #000;
+	margin-top: 100px;
+	position: relative;
+}
+.position-absolute {
+	width: 50px;
+	position: absolute;
+	height: 50px;
+	background: green;
+	left: 200px;
+	top: 50px;
+}
