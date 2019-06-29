@@ -6,13 +6,12 @@
 .cards {
 	width: 50px;
 	height: 50px;
-	background: blue;
+	background: yellow;
 	margin: 10px;
 }
 .inside-card {
 	width: 20px;
 	height: 20px;
-	background: red;
 	display: inline-block;
 }
 .card2 {
@@ -25,4 +24,15 @@
 } 
 .card3 {
 	width: 50vw;
+}
+.card1 {
+	font-weight: 700;
+	font-size: 24px;
+	width: auto;
+	height: auto;
+	margin: 20px;
+	padding: 20px;
+	background: cyan;
+	color: purple;
+	border: 2px solid blue;
 }
