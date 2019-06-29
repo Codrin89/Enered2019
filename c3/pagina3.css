@@ -1,0 +1,19 @@
+.position-absolute{
+position: absolute;
+}
+.position-relative{
+position: relative;
+
+}
+.position-fixed{
+position: fixed;
+}
+.position-static{
+position: static;
+}
+div{
+	width: 100px;
+	height: 100px;
+	border: 1px solid red;
+	background: blue;
+}

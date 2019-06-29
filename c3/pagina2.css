@@ -1,0 +1,27 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.box{
+ 	float: left;
+ 	width: 400px;
+ 	height: 400px;
+ 	background: blue;	
+}
+.right-float{
+	float: right;
+}
+.flag{
+	width: 33.333%;
+	float:left;
+	height: 100px;
+}
+.red{
+	background:red;
+}
+.yellow{
+	background: yellow;
+}
+.blue{
+	background: blue;
+}

@@ -1,0 +1,45 @@
+.position-absolute{
+position: absolute;
+}
+.position-relative{
+position: relative;
+
+}
+.position-fixed{
+position: fixed;
+}
+.position-static{
+position: static;
+}
+
+
+.container{
+	height: 300px;
+	width: 100px;
+	border: 1px solid #000;
+	margin-top: 100px;
+	position: relative;
+}
+
+.position-fixed{
+	width: 100%;
+	height: 200px;
+	background: red;
+}
+body{
+	height: 200vh;
+}
+.position-absolute{
+	width: 100px;
+	height: 200px;
+	background: green;
+	left: 0px;
+	top:0px;
+}
+.position-relative{
+	width: 100px;
+	height: 200px;
+	background: blue;
+	left: 0px;
+	top:0px;
+}
