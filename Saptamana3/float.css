@@ -1,0 +1,34 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+.box {
+	float:left;
+	width: 400px;
+	height: 400px;
+	background: blue;
+}
+
+.right-float {
+	float:right;
+}
+
+.flag {
+
+	width: 33.333%;
+	height: 100px;
+	float:left;
+}
+
+.red {
+	background: red;
+}
+
+.yellow {
+	background: yellow;
+}
+
+.blue {
+	background: blue;
+}
