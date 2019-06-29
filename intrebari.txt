@@ -1,0 +1,5 @@
+1) * suprascrie alte proprietati dintr-o clasa??
+
+2) care e diferenta dintre background si background color?
+
+3) care e diferenta dintre blue si solid blue?
