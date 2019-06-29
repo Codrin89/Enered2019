@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+ .box {
+ 	height: 200px;
+ 	margin-bottom: 10px;
+ 	background-color: pink;
+ }
+  .small-box {
+  	width: 50%;
+  }
+   .small-box div {
+   	height: 50px;
+   	background-color: red;
+   }
+   .inline-block {
+   	display: inline-block;
+   	width: 32%;
+   	height: 50px;
+   }
+   .red {
+   	background: red;
+   }
+   .yellow {
+   	background:yellow;
+   }
+   .blue {
+   	background: blue;
+   }
+   a {
+   	width: 1000px;
+   	height:1000px;
+   	background: green;
+   }
+  .box {
+  	display: none;
+  	/*visibility: hidden;*/
+  }
