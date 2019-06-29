@@ -1,0 +1,62 @@
+.position-absolute {
+	position: absolute;
+}
+.position-relative {
+	position: relative;
+	left: 299px;
+	top: 200px;
+}
+.position-fixed {
+	position: fixed;
+}
+.position-static {
+	position: static;
+}
+.pos-relative {
+	position: relative;
+	top: 150px;
+	left: 200px;
+	background: red;
+}
+.container {
+	height: 300px;
+	width: 100%;
+	border: 1px solid #000;
+	margin-top: 100px;
+	position: relative;
+}
+.position-absolute {
+	width: 50px;
+	height: 50px;
+	background: green;
+	left: 200px;
+	top: 50px;
+}
+.position-fixed {
+	width: 100%;
+	height: 200px;
+	position: fixed;
+	background: red;
+	left: 0;
+	top: 0;
+}
+body {
+	height: 200vh;
+}
+.position-absolute {
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	background: green;
+	left: 0;
+	top: 0;
+}
+.position-relative {
+	width: 100%;
+	height: 200px;
+	position: relative;
+	background: blue;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
