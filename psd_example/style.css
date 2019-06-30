@@ -64,4 +64,22 @@
 }
 .container-cards {
 	background-color: #eeeeef;
+	padding: 50px 80px;
+}
+.container-cards .card {
+	display: inline-block;
+	width: 33%;
+	text-align: center;
+}
+.container-cards .card h6 {
+	font-size: 25px;
+	color: #40474e;
+	margin-top: 30px;
+	text-transform: uppercase;
+}
+.container-cards .card p {
+	color: #787b80;
+	font-size: 18px;
+	margin-top: 30px;
+    padding: 0 70px;
 }
