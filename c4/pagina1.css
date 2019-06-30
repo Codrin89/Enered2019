@@ -1,0 +1,97 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container-top{
+	background-image: url('img.png');
+	min-height: 500px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding-top: 60px ;
+}
+.container-top h3{
+	font-size: 45px;
+	font-style: italic;
+	color: white;
+	text-align: center;
+}
+.container-top .nav {
+	text-align: center;
+	margin-top: 40px;
+}
+.container-top .nav a{
+	color: white;
+	text-decoration:none; 
+	font-size: 20px;
+	margin: 0 15px;
+	text-transform: uppercase;
+}
+.container-top h1{
+	text-align: center;
+	color: white;
+	font-size: 55px;
+	margin-top:70px;
+
+}
+
+.container-top p{
+	color: white;
+	text-align:center;
+	font-size: 20px;
+	margin: 30px;
+}
+.container-top p span{
+	display: inline-block;
+	width: 100px;
+	border-top: 1px solid #fff;
+	position: relative;
+	top:-5px;
+	margin: 0 15px;
+	opacity: 0.5;
+}
+.container-top .action-button{
+	text-align:center;
+	padding-top: 80px;
+	padding-bottom: 120px;
+	
+}
+.container-top .action-button button{
+	background-color: #50c3af;
+	text-transform: uppercase;
+	padding: 15px 45px;
+	color: white;
+	font-size: 16px;
+	border: none;
+	border-radius: 30px;
+	outline: none;
+}
+.container-cards{
+	background-color: #eeeeef;
+	padding: 20px 50px;
+}
+.container-cards .card{
+	display: inline-block;
+	width: 33%;
+	text-align:center;
+
+}
+.container-cards .card hr{
+	margin-left: 75px;
+	margin-right: 75px; 
+
+
+}
+.container-cards .card h4{
+	color: #40474e;
+	font-size: 20px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+			text-transform: uppercase;
+
+}
+.container-cards .card p{
+	margin-top: 15px;
+	font-size: 15px;
+	padding: 0 70px;
+	color:#787b80;
+}
