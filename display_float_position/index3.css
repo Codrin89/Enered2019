@@ -10,6 +10,10 @@
 .position-static {
 	position: static;
 }
+* {
+	margin: 0 ;
+	padding:  0;
+}
 div {
 	width: 100px;
 	height: 100px;
@@ -28,3 +32,51 @@ div {
 	left: 200px;
 	background: red;
 }
+.container {
+	height: 300px;
+	width: 100%;
+	border: 1px solid #000;
+	margin-top: 100px;
+	position: relative;
+}
+.position-absolute {
+	width: 50px;
+	position: absolute;
+	height: 50px;
+	background: green;
+	left: 200px;
+	top: 50px;
+}
+.position-fixed {
+	width: 100%;
+	height: 200px;
+	position: fixed;
+	background: red;
+	top: 0;
+	left: 0;
+}
+body {
+	height: 200vh;
+}
+.position-absolute {
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	background: green;
+	top: 0;
+	left: 0;
+}
+.position-relative {
+	width: 100%;
+	height: 200px;
+	position: relative;
+	background: blue;
+	top: 0;
+	left: 0;
+}
+
+
+
+
+
+
