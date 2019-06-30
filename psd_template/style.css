@@ -1,0 +1,83 @@
+.container-top {
+	background-image: url('assets/top_image.png');
+	background-repeat: no-repeat;
+ 	background-size: 100%;
+ 	min-height: 500px;
+ 	padding-top: 60px;
+ 	padding: 60px 0 0 0;
+
+}
+.container-top h3 {
+	font-size: 25px;
+	font-style: italic;
+	color: red;
+	text-align: center;
+}	
+.container-top .nav {
+	text-align: center;
+	margin-top: 40px;
+}
+.container-top .nav a {
+	color: red;
+	margin: 0 15px;
+	text-decoration: none;
+	font-size: 23px;
+	text-transform: uppercase;
+}
+.container-top h2 {
+	font-size: 65px;
+	text-align: center;
+	color: #fff;
+	margin-top: 70px;
+}
+.container-top p {
+	font-size: 20px;
+	margin-top: 30px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+}
+.container-top p span {
+	display: inline-block;
+	width: 100px;
+	border-top: 1px solid #fff;
+	position: relative;
+	top: -5px;
+	margin: 0 25px;
+	opacity: 0.5;
+}
+.container-top .action-buttons {
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 120px;
+}
+.container-top .action-buttons button{
+	background-color: #50c3af;
+	color: #fff;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	padding: 15px 50px;
+	border-radius: 40px;
+}
+.container-cards {
+	background-color: #eeeeef;
+}
+.container-cards .card {
+	display: inline-block;
+	width: 33%;
+	text-align: center;
+}
+.container-cards .card h6 {
+	font-size: 20px;
+	color: #40474e;
+	margin-top: 20px;
+	text-transform: uppercase;
+}
+.container-cards .card p {
+	color: #787b80;
+	font-size: 18px;
+	margin-top: 30px;
+	padding: 0 70px;
+}
