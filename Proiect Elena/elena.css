@@ -86,3 +86,230 @@
 	margin-top: 30px;
 	padding: 0 70px;
 }
+.container-cards-2 {
+	background-color: #fff;
+	padding: 20px 50px;
+}
+.container-cards-2 .photo {
+	display: inline-block;
+	width: 49%;
+	text-align: center;
+	margin-top: 70px;
+}
+.container-cards-2 .photo h6 {
+	font-size: 23px;
+	color: #40474e;
+	margin-top: 50px;
+	text-transform: uppercase;
+}
+.container-cards-2 .photo p {
+	color: #787b80;
+	font-size: 18px;
+	margin-top: 30px;
+	padding: 0 90px;
+}
+.container-cards-2 .action-buttons {
+	text-align: left;
+	margin-top: 20px;
+	padding-bottom: 44px;
+}
+.container-cards-2 .action-buttons .button {
+	background-color: #50c3af;
+	color: #fff;
+	font-size: 16px;
+	padding: 15px 50px;
+	text-align: center;
+	border: none;
+	outline: none;
+	border-radius: 40px;
+	position: relative;
+	left: 100px;
+	top: 20px;
+}
+.container-cards-2 .photo img {
+	min-width: 400px;
+	max-height: 280px;
+	min-height: 280px;
+}
+.container-cards-3 {
+	background-color: #eeeeef;
+	padding: 50px 50px;
+}
+.container-cards-3 .photo h6 {
+	font-size: 22px;
+	color: #40474e;
+	margin-top: 50px;
+	text-transform: uppercase;
+	text-align: left;
+	display: inline-block;
+	position: relative;
+	left: 60px;
+	top: -20px;
+	width: 50%;
+}
+.container-cards-3 .action-buttons {
+	text-align: left;
+	margin-top: 20px;
+	padding-bottom: 44px;
+}
+.container-cards-3 .action-buttons .button {
+	background-color: #C0C0C0;
+	color: #fff;
+	font-size: 16px;
+	padding: 15px 50px;
+	text-align: center;
+	border: none;
+	outline: none;
+	border-radius: 40px;
+	position: relative;
+	left: 100px;
+	top: 20px;
+}
+.container-cards-3 .photo img {
+	display: inline-block;
+	position: relative;
+	left: 60px;
+}
+.container-cards-3 .photo p {
+	color: #787b80;
+	font-size: 18px;
+	margin-top: 30px;
+	padding: 0 90px;
+}
+.container-cards-4 {
+	background-color: #fff;
+	padding: 20px 50px;
+}
+.container-cards-4 .photo h6 {
+	font-size: 20px;
+	color: #40474e;
+	margin-top: 20px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 20px 50px;
+}
+.container-cards-4 .photo p {
+	color: #787b80;
+	font-size: 18px;
+	padding: 20px 50px;
+	text-align: left;
+}
+.container-cards-4 .photo {
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+	margin: 30px 10px;
+}
+.container-cards-4 .photo img {
+	max-width: 370px;
+	max-width: 265px;
+
+}
+.container-cards-4 .photo a {
+	color: #42ecf5;
+	text-decoration: none;
+	font-size: 20px;
+	margin: 20px 0px;
+	text-align: left;
+	position: relative;
+	left: -70px;
+	margin-bottom: 40px;
+}
+.container-cards-5 {
+	background-color: #eeeeef;
+	padding: 50px 50px;
+}
+.container-cards-5 .photo h6 {
+	font-size: 22px;
+	color: #40474e;
+	margin-top: 50px;
+	text-transform: uppercase;
+	text-align: left;
+	display: inline-block;
+	position: relative;
+	left: 60px;
+	top: -20px;
+	width: 50%;
+}
+.container-cards-5 .action-buttons {
+	text-align: left;
+	margin-top: 20px;
+	padding-bottom: 44px;
+}
+.container-cards-5 .action-buttons .button {
+	background-color: #50c3af;
+	color: #fff;
+	font-size: 16px;
+	padding: 15px 50px;
+	text-align: center;
+	border: none;
+	outline: none;
+	border-radius: 40px;
+	position: relative;
+	left: 100px;
+	top: 20px;
+}
+.container-cards-5 .photo img {
+	display: inline-block;
+	position: relative;
+	left: 60px;
+	top: -7px;
+	max-width: 50px;
+	max-height: 50px;
+}
+.container-cards-5 .photo p {
+	color: #787b80;
+	font-size: 18px;
+	margin-top: 30px;
+	padding: 0 90px;
+}
+.container-cards-5 .photo {
+	display: inline-block;
+	width: 48%;
+}
+.container-cards-6 {
+	background-color: #fff;
+	padding: 20px 50px;
+}
+.container-cards-6 .photo h6 {
+	font-size: 22px;
+	color: #40474e;
+	text-transform: uppercase;
+	text-align: left;
+	display: inline-block;
+}
+.container-cards-6 .action-buttons {
+	text-align: left;
+	margin-top: 20px;
+	padding-bottom: 44px;
+}
+.container-cards-6 .action-buttons .button {
+	background-color: #C0C0C0;
+	color: #fff;
+	font-size: 16px;
+	padding: 15px 50px;
+	text-align: center;
+	border: none;
+	outline: none;
+	border-radius: 40px;
+	position: relative;
+	left: 100px;
+	top: 20px;
+}
+.container-cards-6 .photo img {
+	display: inline-block;
+	position: relative;
+	left: 30px;
+	top: -7px;
+	padding-top: 50px;
+}
+.container-cards-6 .photo p {
+	color: #787b80;
+	font-size: 18px;
+	margin-top: 30px;
+	padding: 0 0px;
+}
+.container-cards-6 .photo {
+	display: inline-block;
+	width: 48%;
+}
