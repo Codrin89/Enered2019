@@ -1,0 +1,101 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.header {
+	background-image: url('header.jpg');
+	background-repeat: no-repeat;
+	background size: 100%;
+	padding: 200px 200px;
+	color: #fff
+}
+.header h3 {
+	font size: 40px;
+	margin-bottom: 30px;
+}
+.header p {
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+.mobile-button {
+	width: 40px;
+	height:40px;
+	border-radius: 50%;
+	outline: none;
+	border: none;
+	opacity: 0.5;
+	background: #555;
+}
+.mobile-button .fab{
+	color: white;
+	font-size: 22px;
+}
+.mobile-button:hover {
+	background: #2ecc71;
+	opacity: 1;
+}
+.subheader {
+	text-align: center;
+	padding: 50px 0;
+}
+.subheader .subheader-card {
+	float: left;
+	width: 33.33333%;
+}
+.subheader .subheader-card i {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #2ecc71;
+    color: #fff;
+    font-size: 24px;
+    padding: 17px;
+}
+.subheader .subheader-card h3 {
+	margin: 20px;
+}
+.subheader .subheader-card p {
+	max-width: 300px;
+	font-size: 18px;
+	margin: 0 auto;
+}
+.email-send {
+	float: left;
+	max-width: 100%;
+	background: #e3e3e3;
+	padding: 50px 100px;
+}
+.email-send > div {
+	float: left;
+	width: 50%;
+}
+.email-send .email-send-left h5 {
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+.email-send .email-send-left p {
+	font-size: 18px;
+	padding-right: 50px;
+}
+.email-send .email-send-left input {
+	padding: 15px 12px;
+	font-size: 18px;
+	margin-top: 30px;
+	border: none;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius:10px; 
+}
+.email-send .email-send-left button {
+	height: 51px;
+	background: #2ecc71;
+	color: #fff;
+	font-weight: bold;
+	outline: none;
+	border: none;
+	padding: 0 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	position: relative;
+	left: -3px;
+	top: -1px;
+}
