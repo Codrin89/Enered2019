@@ -1,0 +1,120 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.header{
+	background: url("header.jpg");
+	background-repeat: no-repeat;
+	padding:250px 50px;
+	color: #fff;
+}
+.header h3{
+	font-size: 40px;
+	margin-bottom: 20px;
+	
+}
+.header h3 span.green-text{
+	color: #2ecc71;
+}
+.header p{
+	font-size: 30px;
+	
+}
+.mobile-button{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	outline: none;
+	opacity: 0.5;
+	background: #555;
+	border: none;
+	margin-left: 10px;
+}
+
+.mobile-button .fab{
+	color: white;
+	font-size: 22px;
+}
+.mobile-button:hover{
+	opacity: 1;
+	background-color:#2ecc71; 
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: none;
+	margin-left: 10px;
+}
+.container{
+	text-align: center;
+	padding: 20px 50px;
+}
+.container .container-card{
+	float: left;	
+	width: 33.33333%;
+
+}
+.container .container-card i{
+	width: 50px;
+	height: 50px;
+	background:#2ecc71 ;
+	border-radius: 50%;
+	font-size: 40px;
+    padding: 20px;
+    color: white;
+}
+.container .container-card h4{
+	margin: 20px 0;
+}
+.container .container-card p{
+	margin:0 auto;
+	font-size: 18px;
+	max-width: 300px;
+}
+
+.email-send{
+	float: left;
+	background-color: #e3e3e3;
+	padding: 40px 50px;
+	max-width: 100%;
+}
+.email-send > div{
+	float: left;
+	width: 50%;
+}
+.email-send .email-send-left h3{
+	margin-top: 10px;
+	margin-bottom: 10px; 
+}
+.email-send .email-send-left p{
+	padding-right:50px;
+	font-size: 18px;
+}
+.email-send .email-send-left input{
+	padding: 7px 7px;
+    font-size: 18px;
+    margin-top: 10px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.email-send .email-send-left button{
+	height: 35px;
+    background-color: #2ecc71;
+    padding: 0px 10px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    top: -1px;
+    left: -3px;
+}
+.email-send .email-send-right{
+	width:320px;
+	height:240px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
