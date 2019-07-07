@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+div {
+	float: left;
+	width: 33.333%;
+	height: 50px;
+	background: green;
+}
+@media screen and (max-width: 978px) {
+	div {
+		width: 100px;
+	}
+}
+@media screen and (min-width: 500px) and (max-width: 800px) {
+	div  {
+		color: #fff;
+	}
+}
+@media screen and (min-width: 800px) and (max-width: 1000px), (max-width: 600px) {
+	div {
+		color: red;
+	}
+}
