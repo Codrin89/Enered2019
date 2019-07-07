@@ -1,0 +1,9 @@
+.transform1 {
+	width: 400px;
+	height: 200px;
+	background: #00f;
+	transform: rotate(20deg); 	
+	transform: skewX(20deg);
+	transform: scale(2, 3);
+	transform: translate(50px, 100px);
+}
