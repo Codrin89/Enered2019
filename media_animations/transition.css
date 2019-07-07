@@ -1,0 +1,10 @@
+div {
+	width: 200px;
+}
+.transitionDiv {
+	width: 100px;
+	height: 100px;
+	background: red;
+	-webkit-transition: width 2s; /* Safari prior 6.1 */
+	transition: width 2s;
+}
