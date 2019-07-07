@@ -1,0 +1,57 @@
+.animated-div {
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	animation: animateText 2s infinite;
+	animation-iteration-count: 5;
+}
+@keyframes animatedDiv {
+	from {top:0;left:0;}
+	to {top:200px;left:200px;}
+}
+@keyframes animatedDiv {
+	0% {top:0;left: 0;}
+	20% {top:200px;left: 200px;}
+	40% {top:300px;left: 200px;}
+	60% {top:300px;left: 500px;}
+	100% {top:0px;left: 0px;}
+}
+@keyframes animateText {
+	0% {
+		font-size: 15px;
+	}
+	20% {
+		font-size: 20px;
+	}
+	100% {
+		font-size: 15px;
+	}
+}
+.circle {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 50%;
+	display: inline-block;
+	background-color: green;
+	position: relative;
+	animation: animateCircle 4s infinite;
+}
+@keyframes animateCircle {
+	0% {
+		background-color: red;
+		left: 0;
+	}
+	50% { 
+		background-color: green;
+		left:1000px;
+	}
+	100% { 
+		background-color: blue;
+		left:0;
+	}
+
+}

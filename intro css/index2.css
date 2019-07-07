@@ -23,5 +23,8 @@ body:before {
 	content: 'before';
 }
 body:after {
-	content: 'after';
+	content: '';
+}
+body:after {
+	content: '';
 }
