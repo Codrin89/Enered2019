@@ -1,0 +1,25 @@
+div {
+	width: 200px;
+	height: 300px;
+	background: #ff0;
+	position: relative;
+	opacity: 0.5;
+	top: 0;
+}
+/*.transitionDiv {
+	width: 100px;
+	height: 100px;
+	background: red;
+	-webkit-transition: width 2s;
+	transition: width 2s, height 7s;
+	transition-delay: 2s, height 7s;
+}*/
+.transitionDiv {
+	width: 100px;
+	height: 100px;
+	background: red;
+	opacity: 1;
+	top: 200px;
+	-webkit-transition: all 3s;
+	transition:all 3s;
+}
