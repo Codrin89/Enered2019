@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.container-animation {
+	height: 300px;
+	border: 2px solid blue;
+}
+.animated-div1 {
+	width: 100px;
+	height: 100px;
+	background: red;
+	position: relative;
+	animation: boxAnimation 4s infinite;
+}
+@keyframes boxAnimation {
+	0% {
+		top: 0;
+		left: 0;
+	}
+	25% {
+		top: 0;
+		left: calc(100% - 100px);
+	}
+	50% {
+		top: 200px;
+		left: calc(100% - 100px);
+	}
+	75% {
+		top: 200px;
+		left: 0;
+
+	}
+	100% {
+		top: 0;
+		left: 0;
+
+	}
+}
+.container-animation-2 {
+	height: 100px;
+	border: 2px solid red;
+}
+.circle {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	display: inline-block;
+	position: relative;
+}
+.first {
+	background: blue;
+	position: relative;
+	animation: boxAnimation1 4s infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+}
+.second {
+	background: red;
+	position: absolute;
+	left: 100%;
+	top: 0;
+	animation: boxAnimation2 4s infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: linear;
+}
+@keyframes boxAnimation1 {
+	0% {
+		left: 0;
+		background: blue;
+	}
+	100% {
+		left: calc(100% - 100px);
+		background: red;
+	}
+}
+@keyframes boxAnimation2 {
+	0% {
+		left: 0;
+		background: blue;
+	}
+	100% {
+		left: calc(100% - 100px);
+		background: red;
+	}
+}
