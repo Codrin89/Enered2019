@@ -1,0 +1,102 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+.header {
+	background: #FFF;
+}
+.header .social-header  {
+	padding-top: 5px;
+	height: 30px;
+	padding-right: 100px;
+}
+.header .social-header * {
+	float: right;
+}
+.header .social-header img {
+	margin: 0 50px 0 0;
+}
+.header .social-header input {
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #000;
+	padding-left: 15px;
+	background-image: url(images/search.png);
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+.header .menu-header {
+	background: #FF7457;
+	height: 60px;
+	color: white;
+}
+.header .menu-header ul {
+	float: right;
+	list-style-type: none;
+
+}
+.header .menu-header ul li {
+	display: inline-block;
+	padding: 18px;
+	font-size: 18px;
+}
+.header .menu-header ul {
+	padding-right: 110px;
+}
+.header .menu-header img {
+	position: relative;
+	top: 4px;
+	width: 76px;
+	height: 90px;
+}
+.banner-top,
+.holiday-apart {
+	text-align: center; 
+	margin-top: -4px;
+}
+.holiday-apart {
+	position: relative;
+}
+.banner-top img,
+.holiday-apart img {
+	width: 80%;
+}
+.holiday-apart p {
+	font-size: 50px;
+	position: absolute;
+	width: 100%;
+	top: 60px;
+	color: #fff;
+}
+.section-image {
+	width: 67%;
+	float: left;
+}
+.section-image img {
+	width: 100%;
+}
+.apartments-section .row {
+	max-width: 80%;
+	margin: 0 auto;
+	margin-top: -5px;
+}
+.section-details {
+	width: 33%;
+	float: left;
+}
+.section-details .section-details-info .sub-title {
+	font-size: 20px;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	border-bottom: 2px solid darkgreen;
+	margin-bottom: 20px;
+	display: inline-block;
+	font-weight: bold;
+}
+.section-details .section-details-info {
+	padding: 45px 10px;
+}
+.section-details .section-details-image img {
+	width: 100%;
+}
