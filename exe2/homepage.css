@@ -34,4 +34,61 @@
 }
 .header .menu-header ul li {
 	display: inline-block;
+	margin:0 15px;
+	font-size: 20px;
+	padding: 18px;
+}
+.header .menu-header img {
+	width: 76px;
+    height: 90px;
+    position: relative;
+    top: 4px;
+}
+.banner-top,
+.holiday-apart {
+	text-align: center;
+}
+.banner-top img,
+.holiday-apart img {
+	width: 80%;
+}
+.holiday-apart {
+	position: relative;
+}
+.holiday-apart p {
+	font-size: 60px;
+	position: absolute;
+	width: 100%;
+	top: 77px;
+	color: white;
+}
+.section-image {
+	width: 67%;
+	float: left;
+}
+.section-image img {
+	width: 100%;
+}
+.apartments-section .row {
+	max-width: 80%;
+	margin: 0 auto;
+}
+.section-details {
+	width: 33%;
+	float: left;
+}
+.section-details-info .sub-title {
+	font-size: 20px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid darkgreen;
+	margin-bottom: 20px;
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.section-details-info {
+    padding: 50.5px 10px;
+}
+.section-details-image img {
+	width: 100%;
 }
