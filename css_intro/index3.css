@@ -1,0 +1,27 @@
+* {
+	/*universal selector*/
+	margin: 0;
+	padding: 0;
+}
+.cards {
+	margin: 10px;
+	width: 50px;
+	height: 50px;
+	background: blue;
+}
+.inside-card {
+	width: 20px;
+	height: 20px;
+	background: red;
+}
+.card2 {
+	width: auto;
+	height: auto;
+	max-width: 500px;
+}
+.card2 p {
+	width: 50%;
+}
+.card3 {
+	width: 50%;
+}
