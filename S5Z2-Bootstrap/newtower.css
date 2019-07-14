@@ -1,0 +1,44 @@
+.top-menu * {
+	margin: 0 15px;
+}
+.top-menu input {
+	border: none;
+	border-bottom: 1px solid black;
+	padding-left: 20px;
+	background-image: url('images/search.png');
+	background-repeat: no-repeat;
+}
+.menu {
+	background: #ff7457;
+	margin-top: 5px;
+}
+.nav-tabs li {
+	color: #fff;
+	margin: 16px 15px;
+}
+.nav-tabs li:hover {
+	background: transparent;
+}
+.menu img {
+	width: 76px;
+	height: 90px;
+	position: absolute;
+	top: 25px;
+}
+.card-container {
+	position: relative;
+}
+.card-container p {
+	font-size: 50px;
+	position: absolute;
+	width: 100%;
+	top: 60px;
+	color: #fff;
+	font-weight: bold;
+}
+.noPadding {
+	padding: 0;
+}
+.img-container {
+	padding-right: 0;
+}
