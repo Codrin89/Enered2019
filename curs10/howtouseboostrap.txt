@@ -1,0 +1,7 @@
+12 columns
+.col-md-1 .col-md-1 .col-md-1 .col-md-1 .col-md-1 .col-md-1 .col-md-1 .col-md-1 .col-md-1 .col-md-1 .col-md-1 .col-md-1
+.col-md-4 .col-md4 .col-md-4
+breakpoint : higher 1200 -> lg
+	     higher 992 -> md
+	     higher 768 -> sm
+             lower 768 -> xs 

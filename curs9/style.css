@@ -52,6 +52,19 @@
 	position: relative;
 	top: 4px;
 }
+.banner-top {
+	position: relative;
+
+}
+.banner-top .form{
+	width: 60%;
+	height: 100px;
+	background: #FFFFFF;
+	position: absolute;
+	top: 250px;
+	left: 19%;
+	opacity: 0.8;
+}
 .banner-top, 
 .holiday-apart{
 	text-align: center;
@@ -104,4 +117,9 @@
 }
 .section-details-image{
 	width: 100%;
+} 
+i{
+	color: white;
+	height: 20px;
+	width: 20px;
 }

@@ -1,0 +1,73 @@
+.top-menu *{
+	margin: 0 25px;
+}
+.top-menu{
+	margin-right: 60px;
+	padding: 8px 10px;
+}
+.top-menu img{
+	height: 18.14px;
+	width: 18.14px;
+}
+.top-menu .united{
+	/*padding: 0px 10px;*/
+	height: 20px;
+	width: 20px;
+}
+
+.top-menu input{
+	border: none;
+	width: 90px;
+	border-bottom: 1px solid black;
+	padding-left:20px;
+	background-image: url('images/search.svg');
+	background-repeat: no-repeat;
+	background-position: center left; 
+	padding-bottom: 0px;
+}
+.menu{
+	background: #ff7457;
+}
+.nav-tabs li{
+	color: #fff;
+	border-bottom: none;
+	margin: 16px 20px;
+	cursor: pointer;
+
+}
+.nav-tabs li:hover{
+	background: transparent;
+}
+.nav-tabs{
+	margin-right: 90px;
+}
+.menu img{
+	width: 76px;
+	height: 90px;
+	position: absolute;
+	top: 35px;
+}
+.card-container{
+	position: relative;
+	text-align: center;
+}
+.card-container p{
+	position: absolute;
+	width: 100%;
+	top: 60px;
+	font-size: 50px;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.col-sm-8.apart {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.noPadding{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.noPadding .img-responsive{
+	width: 100%;
+}
