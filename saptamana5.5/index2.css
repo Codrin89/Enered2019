@@ -1,0 +1,47 @@
+.top-menu * {
+	margin: 0 15px;
+}
+.top-menu input {
+	border: none;
+	border-bottom: 1px solid black;
+	padding-left: 20px;
+	background-image: url('images/search.svg');
+	background-repeat: no-repeat;
+	background-position: center-left;
+}
+.menu {
+	background: #ff7457;
+}
+.nav-tabs li {
+   color: #fff;
+   margin: 16px 15px;
+}
+.nav-tabs li:hover {
+	background: transparent;
+}
+.menu img {
+	position: absolute;
+	height: 77px;
+	width: 80px;
+	top:28px;
+}
+.card-container {
+	position: relative;
+}
+.card-container p {
+	position: absolute;
+	width: 100%;
+	top: 50px;
+	color: white;
+	font-size: 40px;
+	font-weight: bold;
+}
+.noPadding {
+	padding: 0;
+}
+.img-container {
+	padding-right: 0;
+}
+.noPadding .img-responsive {
+	padding: 0;
+}
