@@ -30,4 +30,5 @@ div {
 	top: 200px;
 	-webkit-transition: background 5s, opacity  7s, top 7s, width 3s, height 4s;
 	transition: background 5s, opacity  2s, top 7s, width 3s, height 4s;
+	
 }
