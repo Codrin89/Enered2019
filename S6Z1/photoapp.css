@@ -95,5 +95,117 @@ button {
 }
 .bg2 .col-xs-3 img {
 	width: 100%;
-	padding: 20px 20px;
+	padding: 40px 30px;
+}
+.imageprop img {
+	padding-left: 50px;
+	padding-top: 50px;
+	padding-bottom: 80px;
+}
+.iphone-content h1 {
+	font-size: 35px;
+	width: 100%;
+	color: #6c6c6c;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-top: 50px;
+
+}
+.iphone-content p {
+	font-size: 20px;
+	width: 100%;
+	color: #6c6c6c;
+	padding: 20px 0;
+}
+.iphone-content li {
+	font-size: 20px;
+	width: 100%;
+	color: #6c6c6c;
+	font-weight: bold;
+	padding: 7px 0;	
+	background-position: 0px center;
+	background-repeat: no-repeat;
+	padding-left: 50px;
+}
+.iphone-content ul {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 20px;
+}
+.item1 {
+	background-image: url('images/icon1.png');
+}
+.item2 {
+	background-image: url('images/icon2.png');
+}
+.item3 {
+	background-image: url('images/icon3.png');
+}
+.item4 {
+	background-image: url('images/icon4.png');
+}
+.item5 {
+	background-image: url('images/icon5.png');
+}
+.button3 {
+	background: none;
+	border: 3px solid #525252;
+	padding: 15px 50px 15px 70px;
+	font-size: 20px;
+	margin-right: 30px;
+	margin-top: 20px;
+	background-image: url('images/play.png');
+	background-position: 23px center;
+	background-repeat: no-repeat;
+}
+.iphone-content a {
+	font-size: 20px;
+	color: #525252;
+}
+.bg3 {
+	background-color: #41c17d;
+}
+.image-all h2 {
+	color: #fff;
+	font-size: 22px;
+	font-weight: bold;
+	padding: 15px 0;
+	text-align: center;
+}
+.image-all p {
+	color: #ebf0ee;
+	font-size: 18px;
+	text-align: center;
+}
+.image-all img {
+	padding-top: 100px;
+	padding-bottom: 20px;
+	padding-left: 50%;
+}
+.align-bottom {
+	padding-bottom: 100px;
+}
+.developer p {
+	color: #969998;
+	font-size: 20px;
+	padding-bottom: 40px;
+	text-align: center;
+	padding-top: 80px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.developer h3 {
+	color: #404040;
+	font-size: 30px;
+	text-align: center;
+}
+.developer h4 {
+	color: #969998;
+	font-size: 18px;
+	text-align: center;
+}
+.developer img {
+	padding-left: 47%;
+	padding-top: 40px;
+	padding-bottom: 100px;
 }
