@@ -1,0 +1,62 @@
+.header {
+	background-color: #41C17D
+
+}
+.nav-tabs {
+	list-style-type: none;
+	display: inline-block;
+	border: none;
+}
+
+.nav-tabs li{
+	display: inline-block;
+	color: white;
+	padding: 5px 20px;
+	font-size: 20px;
+	text-shadow: transparent;
+
+}
+
+.pull-right {
+	float:right;
+
+}
+
+.inside-sub-header h1{
+	position: center;
+}
+.inside-sub-header {
+	padding: 250px 0;
+	width: 50%;
+}
+
+
+.sub-header {
+	background: url('images/hero.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.inside-sub-header button{
+
+	background:none;
+	border: 2px solid #525252;
+	padding: 15px 60px 15px 80px;
+	font-size: 20px;
+	margin-right: 30px;
+	margin-top: 20px;
+
+}
+
+.inside-sub-header .button1 {
+	background-image: url('images/android_app.png');
+	background-repeat: no-repeat;
+	background-size: 19px;
+}
+
+.inside-sub-header .button2 {
+	background-image: url('images/ios_icon.png');
+	background-repeat: no-repeat;
+	background-size: 19px;
+}
