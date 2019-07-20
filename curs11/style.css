@@ -1,0 +1,173 @@
+.container-fluid.header {
+	background: #44b67a;
+	padding: 30px 10px;
+}
+.container .top-menu-right img{
+	margin-right: 30px;
+}
+.top-menu-left{
+	position: absolute;
+	top:37px;
+}
+.top-menu-left img{
+	margin-right: 70px;
+	position: relative;
+	top: -7px;
+}
+.nav-tabs {
+	color: #e5edef;
+	padding: 0px 10px;
+	text-decoration: none;
+	border:none;
+}
+.nav-tabs li{
+	padding: 0px 20px;
+	letter-spacing: 1px;
+}
+.container-fluid.banner {
+	background: url('images/hero.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding:60px 0px;
+}
+.container-fluid.banner p{
+	color: #bbbbbd;
+}
+.container-fluid.banner .text{
+	margin-top: 200px;
+	margin-bottom: 100px;
+	position: relative;
+	top: 0%;
+	left: 20%;
+	max-width: 35%;
+	text-align: left;
+}
+.container-fluid.banner .text h3{
+	text-transform: uppercase;
+	font-size: 27px;
+	font-weight: bold;
+}
+.android {
+	margin-left: 20px;
+	background: url('images/android_app.png');
+	background-repeat: no-repeat;
+	background-position: 30px 16px;
+}
+.iphone{
+	background: url('images/iphone_app.png');
+    background-repeat: no-repeat;
+    background-position: 30px 16px;
+}
+.container-fluid.banner button{
+
+
+	border: 2px solid black;
+	padding: 15px 40px 15px 60px;
+	position: relative;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.container-fluid.banner .iphone:hover{
+	background: url('images/iphone_app_hover.png');
+	background-repeat: no-repeat;
+	background-position: 30px 16px;
+	border-color: #44b67a;
+	color: #44b67a;
+}
+.container-fluid.banner .android:hover{
+	background: url('images/android_app_hover.png');
+	background-repeat: no-repeat;
+	background-position: 30px 16px;
+	border-color: #44b67a;
+	color: #44b67a;
+}
+button img{
+	position: relative;
+	top: -2px;
+	left: -4px;
+}
+.col-xs-3.google{
+	background: url("images/google_logo.png");
+	background-repeat: no-repeat;
+	min-height: 80px;
+	background-position: center center;
+}
+.col-xs-3.facebook { 
+	background: url("images/facebook_logo.png");
+	background-repeat: no-repeat;
+	min-height: 80px;
+	background-position: center;
+}
+.col-xs-3.yahoo { 
+	background: url("images/yahoo_logo.png");
+	background-repeat: no-repeat;
+	min-height: 80px;
+	background-position: center;
+}
+.col-xs-3.paypal { 
+	background: url("images/paypal_logo.png");
+	background-repeat: no-repeat;
+	min-height: 80px;
+	background-position: center center;
+}
+.container-fluid.banner-video{
+	background: url('images/iphone.png');
+	background-position: 100px 39px;
+	background-repeat: no-repeat;
+	min-height: 500px;
+	background-size: contain;
+	position: relative;
+}
+.banner-video.text{
+	position: absolute;
+	top: 80px;
+	left: 35%;
+	max-width: 55%;
+	margin-bottom: 100px;
+}
+.banner-video.text h1{
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-left: 40px;
+	font-size: 40px;
+
+}
+.list li {
+	list-style: none;
+	font-weight: bold;
+	color: #6e6e6e;
+}
+.list img{
+	margin-right: 10px;
+}
+@media screen and (min-width:1180px) {
+    .list li{
+       line-height: 50px;
+    }
+}
+@media screen and (max-width:1180px) {
+    .list li{
+       line-height: 23px;
+    }
+}
+.video-btn
+{
+
+	background: url('images/play.png');
+	background-repeat: no-repeat;;
+	background-position:30px center;
+	border: 2px solid black;
+	padding: 15px 50px 15px 70px;
+	position: relative;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+.video-btn-app{
+	border: none;
+	background: transparent;
+}
