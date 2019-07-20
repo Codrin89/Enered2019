@@ -1,0 +1,63 @@
+.header {
+	background: #41c17d;
+	padding: 0;
+}
+.container-fluid {
+    padding: 25px 69px;
+}
+.logo {
+	margin-right: 50px;
+	padding:0 20px;
+}
+p.links {
+	color: white;
+	margin: 0 20px;
+}
+.pull-right {
+	padding:0 80px;
+}
+.img {
+	padding:0 15px;
+}
+.sub-header {
+	background: url('images/hero.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding-right: 15px;
+}
+.inside-sub-header {
+	margin: 250px 0 250px 150px;
+}
+.inside-sub-header p {
+	color: #6c6c6c;
+}
+button {
+	background: none;
+	border: 1px solid #6c6c6c;
+	padding: 15px 30px;
+}
+.android {
+	background-position: 10px center;
+	background-image: url('images/android_app.png');
+	background-repeat: no-repeat;
+}
+.ios {
+	background-position: 10px center;
+	background-image: url('images/iphone_app.png');
+	background-repeat: no-repeat;
+}
+.android:hover {
+	background-position: 10px center;
+	background-image: url('images/android_app_hover.png');
+	background-repeat: no-repeat;
+	color: #41c17d;
+	border-color: #41c17d;
+}
+.ios:hover {
+	background-position: 10px center;
+	background-image: url('images/iphone_app_hover.png');
+	background-repeat: no-repeat;
+	color: #41c17d;
+	border-color: #41c17d;
+}
