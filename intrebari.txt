@@ -1,5 +1,9 @@
-1) * suprascrie alte proprietati dintr-o clasa??
+1) care e diferenta dintre blue si solid blue?
 
-2) care e diferenta dintre background si background color?
+2) proprietate care desparte cuvintele in silabe?
 
-3) care e diferenta dintre blue si solid blue?
+3) cum schimb culoarea placeholder-ului?
+
+4) cum mut background image intr un form? cu procente e ok?
+
+5) hover-arrow pozitionare??

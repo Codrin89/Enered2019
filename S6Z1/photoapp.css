@@ -209,3 +209,52 @@ button {
 	padding-top: 40px;
 	padding-bottom: 100px;
 }
+.developer img:hover {
+	background-image: url('images/nav_arrow_hover.png');
+	background-repeat: no-repeat;
+	padding-left: 47%;
+	padding-top: 40px;
+	padding-bottom: 100px;
+}
+.subscribe h5 {
+	font-size: 25px;
+	color: #ebf0ee;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 40px;
+}
+.subscribe {
+	background: #41c17d;
+	text-align: center;
+}
+.subscribe input {
+	width: 40%;
+	margin-bottom: 100px;
+	display: inline-block;
+	background-image: url('images/sub_icon.png');
+	background-repeat: no-repeat;
+	background-position: 95% center;
+	font-size: 18px;
+	padding: 17px 15px;
+	border-radius: 5px;
+	border: none;
+	border-style: none;
+}
+::placeholder { 
+  color: #41c17d;
+}
+.row1 {
+	padding-top: 100px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+.row1 img {
+	padding: 0 50px;
+}
+.row2 {
+	text-align: center;
+	padding-bottom: 100px; 
+}
+span {
+	font-weight: bold;
+}
