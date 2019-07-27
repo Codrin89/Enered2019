@@ -153,6 +153,16 @@ button img{
        line-height: 23px;
     }
 }
+@media screen and (max-width: 1180px){
+  .container-fluid.banner .android {
+  		margin-left: 0px;
+  		padding-right: 35px;
+  		padding-left: 55px;
+  }
+  .container-fluid.banner .text{
+  		text-align: center;
+  }
+}
 .video-btn
 {
 
@@ -170,4 +180,5 @@ button img{
 .video-btn-app{
 	border: none;
 	background: transparent;
+	margin-left: 100px;
 }

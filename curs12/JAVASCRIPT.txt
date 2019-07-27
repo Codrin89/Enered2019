@@ -1,0 +1,32 @@
+Variables
+VAR
+LET
+CONST->can't change value of primary types
+
+Variables types
+-string
+-number
+-true/false
+-arrays=structuri de date
+-objects
+
+ARRAYS
+-> ['123', 231, 'SOMETHING'] --> 3
+      0     1       2
+-accesibility array[1] etc;
+
+OBJECT
+let object {
+    value1:'something',
+    value2:2314
+}
+-accesibility object['value1']
+
+
+
+Operators 
++ ->add
+- ->minus
+/ ->divide
+* ->multiply
+= ->equals
