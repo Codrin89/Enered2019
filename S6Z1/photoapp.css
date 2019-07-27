@@ -209,12 +209,14 @@ button {
 	padding-top: 40px;
 	padding-bottom: 100px;
 }
-.developer img:hover {
-	background-image: url('images/nav_arrow_hover.png');
-	background-repeat: no-repeat;
-	padding-left: 47%;
-	padding-top: 40px;
-	padding-bottom: 100px;
+.image-pos:hover img:nth-child(2) {
+	display: inline;
+}
+.image-pos img:nth-child(2) {
+	display: none;
+}
+.image-pos:hover img:nth-child(1) {
+	display: none;
 }
 .subscribe h5 {
 	font-size: 25px;
