@@ -23,10 +23,24 @@ let object {
 -accesibility object['value1']
 
 
-
 Operators 
 + ->add
 - ->minus
 / ->divide
 * ->multiply
 = ->equals
+
+COMPARISON OPERATORS                         //typeof a 
+a==b '2'==2 true
+a===b '2'===2 false
+a!=b  '2'!=2 false
+a!==b  '2'!==2 true
+a<b
+a>b
+a>=b
+a<=b
+
+FUNCTIONS 
+Math.round 0.5 ~ 1 || 0.4 ~ 0
+Math.ceil 1.1 ~ 2
+Math.floor 1.6 ~ 1
