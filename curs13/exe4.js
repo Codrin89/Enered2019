@@ -12,7 +12,7 @@ for (var i = 0; i < parseInt(nrProduse); i++) {
 		}
 		a=a+1;
 }
-console.log(arrayProduct);
+// console.log(arrayProduct);
 var sum = 0;
 for (var i = 0; i<arrayProduct.length; i++){
 	sum += arrayProduct[i].prodPrice * arrayProduct[i].prodQuantity;
