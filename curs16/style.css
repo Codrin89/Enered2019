@@ -1,0 +1,73 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.displayNone{
+	display: none !important; 
+}
+.add-form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 200px;
+}
+.add-form input{
+	background: linear-gradient(to top, rgba(149, 165, 166, 0.888), rgba(255,255,255,1));
+	font-size: 18px;
+	color: #333;
+	border: none;
+	border-bottom: 1px solid #95a5a6;
+	padding: 20px 20px;
+	text-align: center;
+	margin: 0px 20px;
+} 
+.add-form textarea{
+	background: linear-gradient(to top, rgba(255, 107, 107, 0.888), rgba(255,255,255,1));
+	font-size: 18px;
+	color: #333;
+	border: none;
+	border-bottom: 1px solid #95a5a6;
+	padding: 10px 20px;
+	text-align: center;
+}
+.save-button{
+	/*position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: block;*/
+	background: #1dd1a1;
+	border: none;
+	box-shadow: 0px 10px 40px black;
+	padding: 10px 50px;
+	color: #fff;
+	font-size: 15px;
+	margin-top: 0px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.row *{
+	display: inline-block;
+	min-width: 100px;
+	border: none;
+}
+
+.column{
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+}
+.button{
+	outline: none;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+}
+.btn-update{
+	background: #0652DD;
+	color: #fff;
+}
+.btn-delete{
+	background: #c0392b;
+	color: #fff;
+}
