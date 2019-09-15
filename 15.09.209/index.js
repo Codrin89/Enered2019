@@ -23,7 +23,7 @@ function initPage() {
 	const getData = JSON.parse(window.localStorage.getItem('todo-data')) || [];
 	const container = document.getElementsByClassName('list')['0'];
 	for (let i = 0; i < getData.length; i++){
-		container.innerHTML += '<div class="row"><div class="column">'+ getData[i].name +'</div><div class="column">'+ getData[i].hour +'</div><div class="column">'+ getData[i].day +'</div><div class="column">'+ getData[i].todo +'</div><div class="column"><button class="btn-update" data-id="update'+ i +'">Update</button><button class="btn-delete" data-id="delete'+ i +'">Delete</button></div></div>';
+		container.innerHTML += '<div class="row"><div class="column">'+ getData[i].name +'</div><div class="column">'+ getData[i].hour +'</div><div class="column">'+ getData[i].day +'</div><div class="column">'+ getData[i].todo +'</div><div class="column"><button class="btn-update" data-id="'+ i +'">Update</button><button class="btn-delete" data-id="'+ i +'">Delete</button></div></div>';
 	}
 }
 
@@ -33,11 +33,12 @@ function addEventListenerRows() {
 	for ( let i=0; i < deleteButtons.length; i++) {
 		deleteButtons[i].addEventListener('click', function(event){
 			//console.log('Clicked on the row with id:' + i);
-			console.log(event.target.getAttribute('data-id'));
+			const index = event.target.getAttribute('data-id');
 			const data = JSON.parse(window.localStorage.getItem('todo-data'));
-			data.splice(i, 1);
+			data.splice(index, 1);
 			window.localStorage.setItem('todo-data', JSON.stringify(data));
 			window.location.reload();
+			console.log(data);
 		});
 	}
 	for ( let i=0; i < updateButtons.length; i++) {
