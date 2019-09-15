@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.displayNone {
+	display: none !important;
+}
+.column {
+	display: inline-block;
+	height: 50px;
+	width: 100px;
+	text-align: center;
+}
+.row * {
+	display: inline-block;
+	min-width: 100px;
+	border-radius: 6px;
+}
+.btn-update {
+	color: white;
+	background: blue;
+}
+.btn-delete {
+	color: white;
+	background: red;
+}
+.btn-add {
+	color: white;
+	background: green;
+	border-radius: 6px;
+	min-width: 60px;
+	min-height: 30px;
+}
