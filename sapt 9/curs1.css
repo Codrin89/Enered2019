@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.displayNone{
+	display: none;
+
+}
+.row{
+	display: inline-block;
+	border-right:1px solid #eee; 
+
+}
+.colomn{
+	display: inline-block;
+    width: 100px;
+}
+button{
+	outline: none;
+	border: none;
+	border-radius: 6px;
+	padding: 7px 12px;
+}
+.btn-update{
+	color: red;
+}
+.btn-delete{
+	color: green;
+}
+#btn-add{
+	color: blue;
+
+}
