@@ -1,0 +1,89 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto';
+}
+.displayNone {
+	display: none !important;
+}
+.add-form {
+	width: 70%;
+	margin: 0 auto;
+}
+h3 {
+	display: inline-block;
+	float: right;
+}
+input,
+textarea,
+button {
+	border: 1px solid #e0e0e0;
+	margin: 3px;
+	border-radius: 5px;
+	padding: 5px;
+}
+button {
+	cursor: pointer;
+	transition: all 0.2s ease-out;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: 600;
+}
+button:hover {
+	color: #fff;
+}
+.add-button {
+	position: sticky;
+	left: 0;
+	top: 0;
+	font-size: 14px;
+	padding: 0.4rem 0.8rem;
+	background-color: rgba(50, 205, 50, 0.4);
+}
+.add-button:hover {
+	background-color: rgba(50, 205, 50, 1);	
+}
+.add-form input {
+	display: inline-block;
+	width: 30%;
+	box-sizing: border-box;
+	outline: none;
+	transition: all 0.2s ease-out;
+}
+.add-form input:focus,
+.add-form textarea:focus {
+	border: 1px solid #696969;
+	outline: none;
+}
+.add-form textarea {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	transition: all 0.2s ease-out;
+}
+.list .row.head {
+	font-weight: 600;
+}
+.list .row:nth-child(2n) {
+	background-color: #f0f0f0;
+}
+.list .column {
+	display: inline-block;
+	padding: 5px;
+	width: 20%;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+.btn-update {
+	background-color: rgba(235, 192, 52, 0.4);
+}
+.btn-update:hover {
+	background-color: rgba(235, 192, 52, 1);	
+}
+.btn-delete {
+	background-color: rgba(235, 52, 52, 0.4);
+}
+.btn-delete:hover {
+	background-color: rgba(235, 52, 52, 1);
+}

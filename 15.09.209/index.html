@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do List</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+	<button class="add-button" id="btn-add">Add</button>
+	<div class="list">
+		<div class="row head">
+			<div class="column">Name</div>
+			<div class="column">Hour</div>
+			<div class="column">Day</div>
+			<div class="column">ToDo</div>
+		</div>
+	</div>
+	<div class="add-form displayNone">
+		<input type="text" id="name-add" placeholder="Name" />
+		<input type="text" id="hour-add" placeholder="Hour" />
+		<input type="text" id="day-add" placeholder="Day" />
+		<textarea placeholder="Your ToDo goes here..." id="todo-add"></textarea>
+		<button id="btn-save-add" class="save-button">Save</button>
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
