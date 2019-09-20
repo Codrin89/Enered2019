@@ -30,19 +30,36 @@ function initPage() {
 function addEventListenerRows() {
 	const updateButtons = document.getElementsByClassName('btn-update');
 	const deleteButtons = document.getElementsByClassName('btn-delete');
-	for (let i=0; i<updateButtons.length; i++) {
-		updateButtons[i].addEventListener('click', function(event) {
-			console.log(event.target.getAttribute('data-id'));
-		});
-	}
-
 	for (let i=0; i<deleteButtons.length; i++) {
 		deleteButtons[i].addEventListener('click', function(event) {
 			console.log(event.target.getAttribute('data-id'));
 			const data = JSON.parse(window.localStorage.getItem('todo-data'));
-			data.splice(index, 1);
+			data.splice(i, 1);
 			window.localStorage.setItem('todo-data', JSON.stringify(data));
 			window.location.reload();
+		});
+	}
+	for (let i=0; i<updateButtons.length; i++) {
+		updateButtons[i].addEventListener('click', function(event) {
+			const data2 = JSON.parse(window.localStorage.getItem('todo-data'));
+			document.getElementById('btn-update-save').addEventListener('click', function() {
+				const form = document.getElementsByClassName('update-form')[0];
+				form.classList.remove('displayNone');
+			});
+			document.getElementById('btn-update-save').addEventListener('click', function() {
+				const updateData = {
+				'name': document.getElementById('name-update').value,
+				'hour': document.getElementById('hour-update').value,
+				'day': document.getElementById('day-update').value,
+				'todo': document.getElementById('todo-update').value
+				};
+			let array2 = JSON.parse(window.localStorage.getItem('todo-data')) || [];
+			// let array = [];
+			array.push(updateData);
+			window.localStorage.setItem('todo-data', JSON.stringify(array));
+			window.location.reload();
+			});
+
 		});
 	}
 }
