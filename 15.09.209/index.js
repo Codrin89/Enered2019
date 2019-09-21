@@ -47,7 +47,8 @@ function addEventListenerRows() {
 	for ( let i=0; i < updateButtons.length; i++) {
 		updateButtons[i].addEventListener('click', function(event){
 			//console.log('Clicked on the row with id:' + i);
-			console.log(event.target);
+			//console.log(event.target);
+			document.getElementsByClassName('popup').style['display', 'block'];
 		});
 	}
 }
