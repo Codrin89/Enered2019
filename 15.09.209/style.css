@@ -4,14 +4,14 @@ body {
 	font-family: 'Roboto';
 }
 .container {
-	width: 80%;
+	width: 60%;
 	margin: 2rem auto;
 }
 .displayNone {
 	display: none !important;
 }
 .add-form {
-	width: 70%;
+	width: 100%;
 	margin: 0 auto;
 }
 h3 {
@@ -50,7 +50,7 @@ button:hover {
 }
 .add-form input {
 	display: inline-block;
-	width: 30%;
+	width: 32.3%;
 	box-sizing: border-box;
 	outline: none;
 	transition: all 0.2s ease-out;
