@@ -24,46 +24,84 @@ function initPage() {
 	const getData = JSON.parse(window.localStorage.getItem('todo-data')) || [];
 	const container = document.getElementsByClassName('list')[0];
 	for (let i=0; i<getData.length; i++) {
-	container.innerHTML += '<div class="row"><div class="column">' +getData[i].name+ '</div><div class="column">' +getData[i].day+ ' </div><div class="column">' +getData[i].hour+  '</div> <div class="column">' +getData[i].todo+ ' </div> <button class="btn-update" data-id=" '+i+ '">Update</button> <button class="btn-delete" data-id=" '+i+ '">Delete</button> </div>' 
+	container.innerHTML += '<div class="row"><div class="column">' +getData[i].name+ '</div><div class="column">'+getData[i].day+' </div><div class="column">'+getData[i].hour+ '</div> <div class="column">'+getData[i].todo+' </div> <button class="btn-update" data-id="'+i+'">Update</button> <button class="btn-delete" data-id=" '+i+'">Delete</button> </div>' 
 	}
 }
 function addEventListenerRows() {
 	const deleteButtons = document.getElementsByClassName('btn-delete');
+	const updateButtons = document.getElementsByClassName('btn-update');
 	for (let i=0; i<deleteButtons.length; i++) {
 		deleteButtons[i].addEventListener('click', function(event) {
-			console.log(event.target.getAttribute('data-id'));
+			const index = event.target.getAttribute('data-id');
 			const data = JSON.parse(window.localStorage.getItem('todo-data'));
-			data.splice(i, 1);
+			data.splice(index, 1);
 			window.localStorage.setItem('todo-data', JSON.stringify(data));
 			window.location.reload();
 		});
-	}
-}
-function addEventListenerUpdate() {
-	const updateButtons = document.getElementsByClassName('btn-update');
-	for (let i=0; i<updateButtons.length; i++) {
-		updateButtons[i].addEventListener('click', function(event) {			
-			const form2 = document.getElementsByClassName('update-form')[0];
-			let data2 = JSON.parse(window.localStorage.getItem('todo-data'));
-			const updateData = {
-				'name': document.getElementById('name-update').value,
-				'hour': document.getElementById('hour-update').value,
-				'day': document.getElementById('day-update').value,
-				'todo': document.getElementById('todo-update').value
-			};
+		updateButtons[i].addEventListener('click', function(event) {
+			const index = event.target.getAttribute('data-id');
+			window.localStorage.setItem('item-update', index);
+			const form = document.getElementsByClassName('update-form')[0];
+			form.classList.remove('displayNone');
+			const data = JSON.parse(window.localStorage.getItem('todo-data'));
+			document.getElementById('name-update').value = data[index].name;
+			document.getElementById('hour-update').value = data[index].hour;
+			document.getElementById('day-update').value = data[index].day;
+			document.getElementById('todo-update').value = data[index].todo;
 			
-			form2.classList.remove('displayNone');
-			data2.push(updateData);
-			window.localStorage.setItem('todo-data', JSON.stringify(data2));
-//			window.location.reload();
-			
-
-
 		});
 	}
-
 }
+
+document.getElementById('btn-save-update').addEventListener('click', function(event) {
+	const data = JSON.parse(window.localStorage.getItem('todo-data'));
+	const index = window.localStorage.getItem('item-update');
+	data[index] = {
+		'name': document.getElementById('name-update').value,
+		'hour': document.getElementById('hour-update').value,
+		'day': document.getElementById('day-update').value,
+		'todo': document.getElementById('todo-update').value
+	};
+	window.localStorage.setItem('todo-data', JSON.stringify(data));
+	window.location.reload();
+});
 
 initPage();
 addEventListenerRows();
-addEventListenerUpdate();
+
+document.getElementById('btn-sort-name').addEventListener('click', function(event){
+	const data = JSON.parse(window.localStorage.getItem('todo-data'));
+	data.sort(function(a, b) {
+		if (a.name > b.name) {
+			return 1;
+		} else {
+			return -1;
+		}
+	});
+	window.localStorage.setItem('todo-data', JSON.stringify(data));
+	window.location.reload();
+})
+document.getElementById('btn-sort-day').addEventListener('click', function(event){
+	const data = JSON.parse(window.localStorage.getItem('todo-data'));
+	data.sort(function(a, b) {
+		if (a.day > b.day) {
+			return 1;
+		} else {
+			return -1;
+		}
+	});
+	window.localStorage.setItem('todo-data', JSON.stringify(data));
+	window.location.reload();
+})
+document.getElementById('btn-sort-hour').addEventListener('click', function(event){
+	const data = JSON.parse(window.localStorage.getItem('todo-data'));
+	data.sort(function(a, b) {
+		if (a.hour > b.hour) {
+			return 1;
+		} else {
+			return -1;
+		}
+	});
+	window.localStorage.setItem('todo-data', JSON.stringify(data));
+	window.location.reload();
+})
