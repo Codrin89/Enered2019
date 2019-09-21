@@ -32,13 +32,16 @@ function addEventListenerRows() {
 	const deleteButtons = document.getElementsByClassName('btn-delete');
 	for ( let i=0; i < deleteButtons.length; i++) {
 		deleteButtons[i].addEventListener('click', function(event){
-			//console.log('Clicked on the row with id:' + i);
-			const index = event.target.getAttribute('data-id');
-			const data = JSON.parse(window.localStorage.getItem('todo-data'));
-			data.splice(index, 1);
-			window.localStorage.setItem('todo-data', JSON.stringify(data));
-			window.location.reload();
-			console.log(data);
+			var confirmation = confirm('Are you sure?');
+			if ( confirmation == true) {
+				//console.log('Clicked on the row with id:' + i);
+				const index = event.target.getAttribute('data-id');
+				const data = JSON.parse(window.localStorage.getItem('todo-data'));
+				data.splice(index, 1);
+				window.localStorage.setItem('todo-data', JSON.stringify(data));
+				window.location.reload();
+				console.log(data);
+			}
 		});
 	}
 	for ( let i=0; i < updateButtons.length; i++) {
