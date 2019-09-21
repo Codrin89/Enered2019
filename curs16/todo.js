@@ -33,7 +33,8 @@ function initPage(){
 		container.innerHTML += '<div class = "row"> <div class="column">' + 
 		getData[i].name +'</div><div class="column">' +getData[i].hour + 
 		'</div><div class="column">' +getData[i].day + '</div><div class="column">' +getData[i].todo + 
-		'</div><button class="button btn-update">Update</button><button class="button btn-delete" data-id="'
+		'</div><button class="button btn-update" data-id="'
+		+i+'">Update</button><button class="button btn-delete" data-id="'
 		+i+'">Delete</button></div>' 
 		;
 	}
@@ -41,6 +42,7 @@ function initPage(){
 }
 function addEventListenerRows(){
 	const deleteButtons = document.getElementsByClassName('btn-delete');
+	const updateButtons = document.getElementsByClassName('btn-update');
 	for (var i = 0; i < deleteButtons.length; i++) {
 		deleteButtons[i].addEventListener('click', function(event){
 			const allInfo = JSON.parse(window.localStorage.getItem('todo-data'));//get all data from localStorage
@@ -48,7 +50,63 @@ function addEventListenerRows(){
 			window.localStorage.setItem('todo-data', JSON.stringify(allInfo));
 			window.location.reload();
 		});
+		updateButtons[i].addEventListener('click', function(event){
+			const index = event.target.getAttribute('data-id');
+			window.localStorage.setItem('item-update',index);
+			const form = document.getElementsByClassName('update-form')[0];
+				 form.classList.remove('displayNone');
+				 //index -> data row
+				 const data = JSON.parse(window.localStorage.getItem('todo-data'));
+				 document.getElementById('name-update').value = data[index].name;
+				 document.getElementById('hour-update').value = data[index].hour;
+				 document.getElementById('day-update').value = data[index].day;	
+				 document.getElementById('todo-update').value = data[index].todo;	
+				});
 	}
 }
+document.getElementById('btn-save-update').addEventListener('click', function(event){
+		 const data = JSON.parse(window.localStorage.getItem('todo-data'));
+		 const index = window.localStorage.getItem('item-update');
+		 data[index] = {
+		 	'name': document.getElementById('name-update').value,
+			'hour': document.getElementById('hour-update').value,
+			'day': document.getElementById('day-update').value,
+			'todo': document.getElementById('todo-update').value
+		 };
+		 window.localStorage.setItem('todo-data', JSON.stringify(data));
+		 window.location.reload();
+});
 initPage();
-addEventListenerRows()
+addEventListenerRows();
+//LOCALSTORAGE ------>JSON parse------>JAVASCRIPT  bring data from localstorage
+//LOCALSTORAGE<-------JSON stringify<------JAVASCRIPT send data to localstorage
+document.getElementById('btn-sort-day').addEventListener('click', function(event){
+	 const data = JSON.parse(window.localStorage.getItem('todo-data'));
+	 data.sort(function(a,b){
+	 	if(a.day > b.day){
+	 		return 1;
+	 	}
+	 	else {
+	 		return -1;
+	 	}
+	});
+	 window.localStorage.setItem('todo-data', JSON.stringify(data));
+	 window.location.reload();
+});
+document.getElementById('btn-sort-hour').addEventListener('click', function(event){
+	 const data = JSON.parse(window.localStorage.getItem('todo-data'));
+	 data.sort(function(a,b){
+	 	if(a.hour > b.hour){
+	 		return 1;
+	 	}
+	 	else {
+	 		return -1;
+	 	}
+	});
+	 window.localStorage.setItem('todo-data', JSON.stringify(data));
+	 window.location.reload();
+});
+//element.addEventListener('...', callback);
+//function callback(event){
+//	...
+//}

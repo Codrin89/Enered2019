@@ -38,6 +38,7 @@
 	display: block;*/
 	background: #1dd1a1;
 	border: none;
+	border-radius:5px;
 	box-shadow: 0px 10px 40px black;
 	padding: 10px 50px;
 	color: #fff;
@@ -70,4 +71,29 @@
 .btn-delete{
 	background: #c0392b;
 	color: #fff;
+}
+.update-form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 200px;
+}
+.update-form input{
+	background: linear-gradient(to top, rgba(149, 165, 166, 0.888), rgba(255,255,255,1));
+	font-size: 18px;
+	color: #333;
+	border: none;
+	border-bottom: 1px solid #95a5a6;
+	padding: 20px 20px;
+	text-align: center;
+	margin: 0px 20px;
+} 
+.update-form textarea{
+	background: linear-gradient(to top, rgba(255, 107, 107, 0.888), rgba(255,255,255,1));
+	font-size: 18px;
+	color: #333;
+	border: none;
+	border-bottom: 1px solid #95a5a6;
+	padding: 10px 20px;
+	text-align: center;
 }
