@@ -28,7 +28,6 @@ function initPage() {
 	}
 }
 function addEventListenerRows() {
-	const updateButtons = document.getElementsByClassName('btn-update');
 	const deleteButtons = document.getElementsByClassName('btn-delete');
 	for (let i=0; i<deleteButtons.length; i++) {
 		deleteButtons[i].addEventListener('click', function(event) {
@@ -39,30 +38,32 @@ function addEventListenerRows() {
 			window.location.reload();
 		});
 	}
+}
+function addEventListenerUpdate() {
+	const updateButtons = document.getElementsByClassName('btn-update');
 	for (let i=0; i<updateButtons.length; i++) {
-		updateButtons[i].addEventListener('click', function(event) {
-			const data2 = JSON.parse(window.localStorage.getItem('todo-data'));
-			document.getElementById('btn-update-save').addEventListener('click', function() {
-				const form = document.getElementsByClassName('update-form')[0];
-				form.classList.remove('displayNone');
-			});
-			document.getElementById('btn-update-save').addEventListener('click', function() {
-				const updateData = {
+		updateButtons[i].addEventListener('click', function(event) {			
+			const form2 = document.getElementsByClassName('update-form')[0];
+			let data2 = JSON.parse(window.localStorage.getItem('todo-data'));
+			const updateData = {
 				'name': document.getElementById('name-update').value,
 				'hour': document.getElementById('hour-update').value,
 				'day': document.getElementById('day-update').value,
 				'todo': document.getElementById('todo-update').value
-				};
-			let array2 = JSON.parse(window.localStorage.getItem('todo-data')) || [];
-			// let array = [];
-			array.push(updateData);
-			window.localStorage.setItem('todo-data', JSON.stringify(array));
-			window.location.reload();
-			});
+			};
+			
+			form2.classList.remove('displayNone');
+			data2.push(updateData);
+			window.localStorage.setItem('todo-data', JSON.stringify(data2));
+//			window.location.reload();
+			
+
 
 		});
 	}
+
 }
 
 initPage();
 addEventListenerRows();
+addEventListenerUpdate();
