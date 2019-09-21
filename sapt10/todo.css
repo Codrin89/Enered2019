@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.displayNone {
+	display: none !important;
+}
+.row * {
+	display: inline-block;
+	min-width: 100px;
+	border-right: 1px solid #eee;
+}
+button {
+	outline: none;
+	border: none;
+	border-radius: 6px;
+	padding: 7px 12px;
+}
+.btn-update {
+	background: blue;
+	color: #fff;
+}
+.btn-delete {
+	background: red;
+	color: #fff;
+}
+.btn-add {
+	background: green;
+	color: #fff;
+}
