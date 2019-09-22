@@ -31,11 +31,7 @@
 	text-align: center;
 }
 .save-button{
-	/*position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	display: block;*/
+
 	background: #1dd1a1;
 	border: none;
 	border-radius:5px;
@@ -55,18 +51,23 @@
 
 .column{
 	display: inline-block;
-	width: 100px;
 	text-align: center;
+	border-right: 1px solid #333;	
+	max-width: 200px;
+	position: relative;	
 }
+
 .button{
 	outline: none;
 	border: none;
 	border-radius: 6px;
 	cursor: pointer;
+
 }
 .btn-update{
 	background: #0652DD;
 	color: #fff;
+	margin: 0px 20px;
 }
 .btn-delete{
 	background: #c0392b;
@@ -88,12 +89,7 @@
 	text-align: center;
 	margin: 0px 20px;
 } 
-.update-form textarea{
-	background: linear-gradient(to top, rgba(255, 107, 107, 0.888), rgba(255,255,255,1));
-	font-size: 18px;
-	color: #333;
-	border: none;
-	border-bottom: 1px solid #95a5a6;
-	padding: 10px 20px;
-	text-align: center;
+.column:nth-child(4){
+	overflow:hidden;
+	text-overflow: ellipsis;
 }
