@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validation</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<form>
+					<div class="form-group row">
+						<div class="col">
+							<input type="text" name="Name" id="name" placeholder="Name" class="form-control">
+						</div>
+						<div class="col">
+							<input type="text" id="age" name="age" placeholder="Age" class="form-control">
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col">
+								<select id="professionValid" class="form-control"></select>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col">
+							<input type="text" name="yearsOfExperience" id="experience" placeholder="Years of experience" class="form-control">
+						</div>
+						<div class="col">
+							<input type="date" name="birthDate" id="birthday" class="form-control">
+						</div>
+					</div>
+					<button class="btn btn-primary" id="submit">submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="validationform.js"></script>
+</body>
+</html>
