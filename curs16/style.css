@@ -92,4 +92,5 @@
 .column:nth-child(4){
 	overflow:hidden;
 	text-overflow: ellipsis;
+	color: #fff;
 }
