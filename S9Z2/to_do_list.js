@@ -1,11 +1,10 @@
-//element.addEventListener('click', funtion() {
-//	
-//});
+//ADD button
 document.getElementById('btn-add').addEventListener('click', function() {
 	const form = document.getElementsByClassName('add-form')[0];
 	form.classList.remove('displayNone');
 });
 
+//save new entries
 document.getElementById('btn-save-add').addEventListener('click', function() {
 	const saveData = {
 		'name': document.getElementById('name-add').value,
@@ -20,6 +19,7 @@ document.getElementById('btn-save-add').addEventListener('click', function() {
 	window.location.reload();
 });
 
+//initialize page
 function initPage() {
 	const getData = JSON.parse(window.localStorage.getItem('todo-data')) || [];
 	const container = document.getElementsByClassName('list')[0];
@@ -27,6 +27,9 @@ function initPage() {
 	container.innerHTML += '<div class="row"><div class="column">' +getData[i].name+ '</div><div class="column">'+getData[i].day+' </div><div class="column">'+getData[i].hour+ '</div> <div class="column">'+getData[i].todo+' </div> <button class="btn-update" data-id="'+i+'">Update</button> <button class="btn-delete" data-id=" '+i+'">Delete</button> </div>' 
 	}
 }
+
+
+//update/delete entries
 function addEventListenerRows() {
 	const deleteButtons = document.getElementsByClassName('btn-delete');
 	const updateButtons = document.getElementsByClassName('btn-update');
@@ -53,6 +56,7 @@ function addEventListenerRows() {
 	}
 }
 
+//save updates of entries
 document.getElementById('btn-save-update').addEventListener('click', function(event) {
 	const data = JSON.parse(window.localStorage.getItem('todo-data'));
 	const index = window.localStorage.getItem('item-update');
@@ -66,9 +70,17 @@ document.getElementById('btn-save-update').addEventListener('click', function(ev
 	window.location.reload();
 });
 
+//cancel update of entry
+document.getElementById('btn-cancel-update').addEventListener('click', function(event) {
+	window.location.reload();
+});
+
+
 initPage();
 addEventListenerRows();
 
+
+//sort objects by name
 document.getElementById('btn-sort-name').addEventListener('click', function(event){
 	const data = JSON.parse(window.localStorage.getItem('todo-data'));
 	data.sort(function(a, b) {
@@ -81,6 +93,8 @@ document.getElementById('btn-sort-name').addEventListener('click', function(even
 	window.localStorage.setItem('todo-data', JSON.stringify(data));
 	window.location.reload();
 })
+
+//sort objects by day
 document.getElementById('btn-sort-day').addEventListener('click', function(event){
 	const data = JSON.parse(window.localStorage.getItem('todo-data'));
 	data.sort(function(a, b) {
@@ -93,6 +107,8 @@ document.getElementById('btn-sort-day').addEventListener('click', function(event
 	window.localStorage.setItem('todo-data', JSON.stringify(data));
 	window.location.reload();
 })
+
+//save objects by hour
 document.getElementById('btn-sort-hour').addEventListener('click', function(event){
 	const data = JSON.parse(window.localStorage.getItem('todo-data'));
 	data.sort(function(a, b) {

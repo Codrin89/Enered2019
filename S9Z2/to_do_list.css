@@ -17,16 +17,29 @@
 	border-radius: 6px;
 }
 .btn-update {
-	color: white;
-	background: blue;
+	padding: 10px 0;
+	color: black;
+	background: #F7DC6F;
 }
 .btn-delete {
-	color: white;
-	background: red;
+	color: black;
+	padding: 10px 0;
+	background: #EC7063;
 }
 .btn-add {
+	margin-bottom: 10px;
+	padding: 10px 5px;
 	color: white;
-	background: green;
+	background: #58D68D ;
+	border-radius: 6px;
+	min-width: 60px;
+	min-height: 30px;
+}
+.btn-cancel {
+	margin-bottom: 10px;
+	padding: 10px 5px;
+	color: white;
+	background: #ABB2B9;
 	border-radius: 6px;
 	min-width: 60px;
 	min-height: 30px;
