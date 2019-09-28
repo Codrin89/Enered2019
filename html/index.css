@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.pre-header {
+	height: 30px;
+	width: 100%;
+}
+.pre-header a {
+	float: right;
+	margin: 6px 10px 0;
+}
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.header-menu {
+	background: #F9F9F9;
+	height: 60px;
+}
+.header-menu ul {
+	list-style-type: none;
+}
+.header-menu ul li {
+	float: right;
+	margin: 20px 16px;
+}
+.header-image img {
+  width: 100%;
+}
+.search-container * {
+	max-width: 100%;
+}
+.search-container {
+	padding: 20px;
+}
+.search-container > div {
+	float: left;
+	margin: 0 1%;
+}
+.search-container .search-group.search-group-large {
+	width:16.66%;
+}
+.search-container .search-group.search-group-small {
+	width: 9%;
+}
+.search-container .search-group.search-group-btn {
+	width: 8.33%;
+}
