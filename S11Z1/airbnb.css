@@ -30,6 +30,10 @@
 	width: 100%;
 	height: 173px;
 }
+.search-container {
+	background-color: white;
+	margin-top: -40px;
+}
 .search-container * {
 	max-width: 100%;
 }
@@ -51,6 +55,14 @@
 }
 .btn-green {
 	background-color: #41A593;
+	border-radius: 10%;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	font-size: 14px;
+}
+.search-group input {
+	background-color: #EDEDED;
 	border-radius: 10%;
 	color: white;
 	padding: 10px;
