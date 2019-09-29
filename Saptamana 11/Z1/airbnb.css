@@ -64,5 +64,12 @@
 .btn-green {
 	margin: 10px;
 	background-color: #41A593;
-	
+	border-radius: 10px;
+
+}
+
+.search-group input {
+	border-radius: 10px;
+	background-color:#EDEDED;
+	width: 100px;
 }

@@ -1,0 +1,16 @@
+.background {
+	background-color: #41c17d;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.background .social-media img {
+	padding: 10px;
+}
+
+.nav-tab li {
+	color:white;
+	padding: 20px;
+	margin: 10px 15px;
+
+}
