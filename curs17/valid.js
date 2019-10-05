@@ -59,7 +59,7 @@ document.getElementById('experience').addEventListener('keyup',function(event){
 	var validExp = validateExperience(initialValue);
 	// console.log(initialValue);
 
-		if(initialValue < 0){
+		if(initialValue < 0 || initialValue > 20 ){
 		alert('Not a valid answer!');
 }
 		if(initialValue !== validExp )
