@@ -1,0 +1,33 @@
+.superheroes-list .header {
+	background-color: #d0d0d0 !important;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.superheroes-list .row {
+	transition: all 0.2s ease-out;
+}
+
+.superheroes-list .row:nth-child(2n+1) {
+	background-color: #f0f0f0;
+}
+
+.superheroes-list .row:hover {
+	background-color: #f9f9f9;
+}
+
+.superheroes-list .row button {
+	float: right;
+	padding: 0.1rem;
+	font-size: 0.65rem;
+	text-transform: uppercase;
+	transform: translateY(2px);
+}
+
+.hero-container img {
+	width: 100%;
+}
+
+.hero-container p {
+	display: block;
+}
