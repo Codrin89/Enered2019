@@ -1,0 +1,27 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.superheroes-list {
+
+}
+.header {
+	font-weight: bold;
+}
+.row {
+	border-bottom: 1px solid #eee;
+	padding: 5px 0;
+}
+.column {
+	display: inline-block;
+	width: 30%;
+}
+.headline {
+	font-weight: bold;
+	text-decoration: underline;
+	text-decoration-color: red;
+
+}
+.hero-picture {
+	float: left;
+}
