@@ -1,4 +1,3 @@
-
 function renderSuperheroesList(dataFeed) {
 
   for(let i = 0; i < dataFeed.length ; i++) {
@@ -19,6 +18,27 @@ function addEventListenerButtons() {
     });
   }
 }
+
+function callServer() {
+  var xhr = new XMLHttpRequest();
+  const url = 'https://private-anon-9387513eab-superheroes.apiary-mock.com/characters/';
+
+  xhr.onreadystatechange = function(response) {
+    console.log(response.currentTarget.readyState);
+    if(response.currentTarget.readyState === 4) {
+      var result = JSON.parse(response.currentTarget.responseText);
+      renderSuperheroesList(result.Characters);
+    }
+  }
+
+  xhr.open("GET", url, true);
+  xhr.send();
+}
+callServer();
+
+
+
+
 
 
 
