@@ -13,8 +13,7 @@ function addEventListenerButtons() {
   const buttons = document.getElementsByClassName('btn-goTo');
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function() {
-      console.log(this.dataset.id);
-      window.location.href = 'singleHero.html';
+      window.location.href = 'index2.html?id=' + this.dataset.id;
     });
   }
 }

@@ -17,4 +17,24 @@ function renderHeroData(singleHeroData) {
 }
 
 
-renderHeroData(data);
+function callServer() {
+  var xhr = new XMLHttpRequest();
+  const id = window.location.href.split('?id=')[1];
+  const url = 'https://private-anon-9387513eab-superheroes.apiary-mock.com/characters/' + id;
+
+  xhr.onreadystatechange = function(response) {
+    console.log(response.currentTarget.readyState);
+    if(response.currentTarget.readyState === 4) {
+      var result = JSON.parse(response.currentTarget.responseText);
+      renderHeroData(result);
+    }
+  }
+
+  xhr.open("GET", url, true);
+  xhr.send();
+}
+callServer();
+
+
+
+// renderHeroData(data);
