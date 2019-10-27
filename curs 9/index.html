@@ -6,6 +6,11 @@
 </head>
 <body>
 	<button id="btn-add" class="btn-add">add</button>
+	<button id="btn-sort" class="btn-add">sort</button>
+	<button id="btn-sortHour" class="btn-add">sortHour</button>
+	<button id="btn-sortDay" class="btn-add">sortDay</button>
+
+
 	<div class="list"></div>
 
 	<div class="add-form displayNone">
@@ -14,6 +19,13 @@
 		<input type="text" id="day-add" placeholder="Day"/>
 		<textarea id="todo-add" placeholder="Your ToDo goes here..." ></textarea>
 		<button id="btn-save-add" class="save-button">save</button>
+	</div>
+	<div class="update-form displayNone">
+		<input type="text" id="name-update" placeholder="Name"/>
+		<input type="text" id="hour-update" placeholder="Hour"/>
+		<input type="text" id="day-update" placeholder="Day"/>
+		<textarea id="todo-update" placeholder="Your ToDo goes here..." ></textarea>
+		<button id="btn-save-update" class="save-button">Update</button>
 	</div>
 	<script type="text/javascript" src="index.js"></script>
 
