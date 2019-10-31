@@ -110,13 +110,9 @@ console.log(swapCases("Abc"));
 // Write a JavaScript function to concatenates a given string n times console.log(repeat('Ha!',2)); console.log(repeat('Ha!',3)); "Ha!Ha!" "Ha!Ha!Ha!"
 console.log('Exe11');
 function repeat(param, n) {
-	for (var i = 0; i<n; i++) {
-		param[i] = param;
-		param = param + param[i];
-	}
-	return param;
+	return param.repeat(n);
 }
-console.log(repeat("Ha!", 3));
+console.log(repeat("Ha!", 5));
 
 // Write a JavaScript function to insert a string within a string at a particular position console.log(insert('We are doing some exercises.','JavaScript ',18)); "We are doing some JavaScript exercises.
 console.log('Exe12');
@@ -127,9 +123,32 @@ console.log(insertString('We are doing some exercises.','JavaScript ',18));
 
 // Write a JavaScript function to chop a string into chunks of a given length. console.log(string_chop('w3resource',2)); console.log(string_chop('w3resource',3)); ["w3", "re", "so", "ur", "ce"] ["w3r", "eso", "urc", "e"]
 console.log('Exe13');
+function string_chop (param, n) {
+	return param.match(new RegExp('.{1,' + n + '}', 'g'));
+}
+console.log(string_chop('w3resource', 2));
+console.log(string_chop('w3resource', 3));
 
 // Write a JavaScript function to humanized number (Formats a number to a human-readable string.) with the correct suffix such as 1st, 2nd, 3rd or 4th. console.log(humanize_format()); console.log(humanize_format(1)); console.log(humanize_format(8)); console.log(humanize_format(301)); console.log(humanize_format(402)); "1st" "8th" "301st" "402nd"
 console.log('Exe14');
+function humanize_format(param) {
+	if (typeof(param) === 'number') {
+		if (param%10 === 1) 
+			param = param + 'st';
+		else if (param%10 === 2) 
+			param = param + 'nd';
+		else if (param%10 === 3) 
+			param = param + 'rd';
+		else param = param + 'th';
+
+		return param;} else { 
+		return "not a number";}
+}
+console.log(humanize_format(1));
+console.log(humanize_format(8));
+console.log(humanize_format(301));
+console.log(humanize_format(403));
+console.log(humanize_format('abecedar'));
 
 // Write a JavaScript function to remove the first occurrence of a given 'search string' from a string. console.log(remove_first_occurrence("The quick brown fox jumps over the lazy dog", 'the')); Output : "The quick brown fox jumps over lazy dog"
 console.log('Exe15');
