@@ -1,0 +1,22 @@
+.game-container {
+	width: 456px;
+	margin: 0 auto;
+}
+.game-container > div {
+	width: 150px;
+	height: 150px;
+	border: 1px solid #555;
+	float: left;
+}
+.added-0 {
+	background-image: url('0-imag.jpg');
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 1px;
+}
+.added-X {
+	background-image: url('x-imag.webp');
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 1px;
+}
