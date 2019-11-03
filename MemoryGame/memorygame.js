@@ -1,24 +1,24 @@
 let myDeck = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
-
+console.log(myDeck);
 function initGame() {
 	window.location.reload();
 }
 
 function shuffleDeck(array) {
 	let counter = array.length;
-	for(let i=0; i<counter; i++) {
-		let index = Math.random()*counter;
-		index -= Math.floor(index);
-		let temp = array[counter];
-		array[counter] = array[index];
-		array[index] = temp;
+	for(let i = counter-1; i>0; i--) {
+		let index = Math.random()*(counter+1);
+		index = Math.floor(index);
+		[array[i], array[index]] = [array[index], array[i]];
 	}
 	return array;
 }
+myDeck = shuffleDeck(myDeck);
 
 var gameCards = document.getElementsByClassName('game-card');
 console.log(gameCards);
-shuffleDeck(gameCards);
+console.log(myDeck);
+
 for (let i=0; i<gameCards.length; i++) {
 	gameCards[i].addEventListener('click', function() {
 		switch(i+1) {
@@ -57,3 +57,5 @@ for (let i=0; i<gameCards.length; i++) {
 		}
 	});
 }
+
+console.log(gameCards);
