@@ -56,3 +56,9 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 }
+.winner-pair {
+	background-image: url('images/blue.jpg');
+}
+.loser-pair {
+	background-image: url('images/white.jpeg'); ;
+}

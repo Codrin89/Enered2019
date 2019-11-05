@@ -1,5 +1,3 @@
-let myDeck = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
-console.log(myDeck);
 function initGame() {
 	window.location.reload();
 }
@@ -13,11 +11,26 @@ function shuffleDeck(array) {
 	}
 	return array;
 }
-myDeck = shuffleDeck(myDeck);
 
+function toArray(x) {
+	var a = [];
+    for(var i = 0; i < x.length; i++)
+        a.push(x[i]);
+
+    return a;
+}
+
+function delay(milisecondDelay) {
+   milisecondDelay += Date.now();
+   while(Date.now() < milisecondDelay){}
+}
+
+var cardCounter = 0;
 var gameCards = document.getElementsByClassName('game-card');
+gameCards = toArray(gameCards);
+// gameCards = shuffleDeck(gameCards);
 console.log(gameCards);
-console.log(myDeck);
+
 for (let i=0; i<gameCards.length; i++) {
 	gameCards[i].addEventListener('click', function() {
 		switch(i+1) {
@@ -53,6 +66,18 @@ for (let i=0; i<gameCards.length; i++) {
 			case 16:
 				this.classList.add('pair-8');
 				break;
+		}
+		cardCounter++;
+		console.log(cardCounter);
+		if (cardCounter === 2) {
+			if (gameCards[i].dataset.id === gameCards[i-1].dataset.id) {
+				gameCards[i].classList.remove('pair-' +(i+1)/2 );
+				gameCards[i].classList.add('winner-pair');
+			} else {
+				gameCards[i].classList.add('loser-pair');
+			}
+			console.log(gameCards[i-1]);
+			cardCounter = 0;
 		}
 	});
 }
