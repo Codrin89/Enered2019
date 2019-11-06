@@ -26,6 +26,7 @@ function delay(milisecondDelay) {
 }
 
 var cardCounter = 0;
+var a= -1, b= -1;
 var gameCards = document.getElementsByClassName('game-card');
 gameCards = toArray(gameCards);
 // gameCards = shuffleDeck(gameCards);
@@ -67,18 +68,38 @@ for (let i=0; i<gameCards.length; i++) {
 				this.classList.add('pair-8');
 				break;
 		}
-		cardCounter++;
-		console.log(cardCounter);
-		if (cardCounter === 2) {
-			if (gameCards[i].dataset.id === gameCards[i-1].dataset.id) {
-				gameCards[i].classList.remove('pair-' +(i+1)/2 );
-				gameCards[i].classList.add('winner-pair');
+		if (a === -1) {
+			a = gameCards[i];
+		} else if (b === -1) {
+			b = gameCards[i];
+			if (a === b) {
+			gameCards[i].classList.remove('pair-' +(i+1)/2 );
+			gameCards[i].classList.add('winner-pair');
 			} else {
 				gameCards[i].classList.add('loser-pair');
 			}
-			console.log(gameCards[i-1]);
-			cardCounter = 0;
+		} else {
+			a = -1;
+			b = -1;
+			gameCards[i].classList.add('loser-pair');
 		}
+		console.log(a, b);
+
+
+
+
+
+
+		// if (cardCounter === 2) {
+		// 	if (gameCards[i].dataset.id === gameCards[i-1].dataset.id) {
+		// 		gameCards[i].classList.remove('pair-' +(i+1)/2 );
+		// 		gameCards[i].classList.add('winner-pair');
+		// 	} else {
+		// 		gameCards[i].classList.add('loser-pair');
+		// 	}
+		// 	console.log(gameCards[i-1]);
+		// 	cardCounter = 0;
+		// }
 	});
 }
 
