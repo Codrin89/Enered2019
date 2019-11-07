@@ -20,7 +20,6 @@ for(let i=0; i<gameTiles.length; i++) {
 		if(this.getAttribute('data-dirty')) {
 			return;
 		}
-
 		//do click
 		if(turn) {
 			this.classList.add('added-0');
