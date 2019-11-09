@@ -1,0 +1,54 @@
+.game-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr; 
+}
+.right-container input {
+	width: 75%;
+	margin: 0 auto;
+	display: block;
+	padding: 12px 7px;
+	border: none;
+	background-color: #ebebeb;
+	margin-bottom: 15px;
+	text-align: center;
+	color: #BFBFBF;
+}
+.right-container {
+	text-align: center;
+	position: relative;
+
+}
+.right-container h1 {
+	margin -bottom: 50px;
+	margin-top: 200px;
+}
+.right-container button {
+	margin-top: 165px;
+
+}
+.right-container img {
+	position:absolute;
+	z-index: -1;
+	left: 0;
+	top: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+.name-imput {
+	background-image: url('icon_user.svg');
+	background-repeat: no-repeat;
+	background-position: 15px center;
+}
+.email-adress{
+	background-image: url('icon_email.svg');
+	background-repeat: no-repeat;
+	background-position: 15px center;
+}
+.button {
+	background-color: #4db8ff;
+	text-align: center;
+	width: 65%;
+	height: 5%;
+	color: white;
+	border: none;
+}
