@@ -1,8 +1,10 @@
-Write a function to check whether an `input` is a string or not. 
+->Write a function to check whether an `input` is a string or not. 
+----------
 console.log(is_string('w3resource'));
 true
 console.log(is_string([1, 2, 4, 0]));
 false
+----------
 
 Write a function to check whether a string is blank or not. 
 console.log(is_Blank(''));
