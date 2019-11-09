@@ -1,0 +1,24 @@
+.game-container {
+	width: 456px;
+	margin: 0 auto;
+}
+.game-container > div {
+	width: 150px;
+	height: 150px;
+	border: 1px solid #555;
+	float: left;
+}
+.added-0 {
+	background-image:url('0.jpg');
+	background-position: center;
+	background-size: 150px;
+	background-repeat: no-repeat;
+}
+
+.added-X {
+	background-image:url('x.jpg');
+	background-position: center;
+	background-size: 250px;
+	background-repeat: no-repeat;
+}
+

@@ -1,0 +1,66 @@
+.game-screen > div {
+	float: left;
+
+}
+
+.girl {
+	width: 50%;
+}
+
+
+.right-screen {
+	width: 50%;
+	text-align: center;
+	background-image: url('images/images/register_bg.png');
+	height: 768px;
+
+}
+
+.right-screen h1 {
+	text-align: center;
+	font-size: 36px;
+	margin-top: 196px;
+}
+
+.right-screen input {
+	width: 70%;
+	margin: 20px;
+	background-color: #ebebeb;
+	height: 48px;
+	padding-left: 50px;
+	font-size: 16px;
+	border: 1px solid #ebebeb;
+
+	
+}
+
+.name {
+	background-image: url('images/images/icon_user.svg');
+	background-repeat: no-repeat;
+	background-position: 15px center;
+	
+}
+
+.email {
+	background-image: url('images/images/icon_email.svg');
+	background-repeat: no-repeat;
+	background-position: 15px center;
+
+}
+
+
+.right-screen button {
+	width: 70%;
+	padding: 10px;
+	margin: 20px;
+	background-color: #2792D0;
+	color: white;
+	height: 48px;
+
+}
+
+.line {
+	width: 75%;
+	background-color: transparent;
+	margin-bottom: 150px;
+}
