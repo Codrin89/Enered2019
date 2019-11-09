@@ -1,0 +1,71 @@
+.main-content div{
+	display: inline-block;
+	width: 50%;
+	height:100%;
+}
+.main-content .account-right{
+	background: url('images/register_bg.png');
+	background-position: -30px 0px;
+	background-repeat: no-repeat;
+	padding:15% 10%;
+}
+.main-content .account-right h1#title{
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-bottom: 50px;
+	color: #2F3D4E;
+	font-size: 36px;
+}
+.main-content .image-left img{
+	width: 100%;
+}
+.main-content .account-right input.name{
+	background: url('images/download.svg') #EBEBEB;
+	background-repeat: no-repeat;
+	background-position: 15px 15px;
+}
+.main-content .account-right input.email{
+	background: url('images/icon_email.svg') #EBEBEB;
+	background-repeat: no-repeat;
+	background-position: 15px 15px;
+}
+.main-content .account-right input.phone{
+	background: url('images/icon_phone.png') #EBEBEB;
+	background-repeat: no-repeat;
+	background-position: 15px 10px;
+	background-size: 25px;
+	width:70%;
+	font-weight: bold;
+	color: gray;
+}
+.main-content .account-right input{
+	width: 100%;
+	display: block;
+	margin-bottom: 10px;
+	height: 48px;
+	border: none;
+	padding-left: 50px;
+	color: #bfbfbf;
+	font-size: 16px;
+	/*font-weight: bold;*/
+}
+.main-content .account-right span{
+	display: block;
+	height: 2px;
+	background:#eee;
+	margin-top: 39%;
+	margin-bottom: 15%;
+	width: 90%;
+	position: relative;
+	margin-left: 20px;
+}
+.main-content .account-right button{
+	color: #fff;
+	/*margin-top:60%;*/
+	width: 100%;
+	height: 48px;
+	background: #2792D0;
+	outline: none;
+	border: none;
+}
