@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    max-height: 100vh;
+    overflow: hidden;
+}
+.register-page {
+    display: flex;
+    display: none;
+}
+.register-page.show {
+    display: flex;
+}
+.register-page .register-container {
+    flex-basis: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.register-page .register-container img {
+    width: 100%;
+}
+.register-page .bg-banner {
+    background: url('./../images/register_bg.png');
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.register-page .bg-banner h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.register-page .bg-banner input {
+    background-color: #ebebeb;
+    width: 70%;
+    border: 1px solid #ebebeb;
+    color: #bfbfbf;
+    margin-bottom: 10px;
+    padding-left: 50px;
+    font-size: 16px;
+    height: 48px;
+    font-weight: bold;
+}
+.register-page .bg-banner input.input-user {
+    background-image: url('./../images/icon_user.svg');
+    background-repeat: no-repeat;
+    background-position: 15px center;
+}
+.register-page .bg-banner input.input-email {
+    background-image: url('./../images/icon_email.svg');
+    background-repeat: no-repeat;
+    background-position: 15px center;
+}
+.register-page .bg-banner input.input-phone {
+    background-image: url('./../images/icon_phone.png');
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    background-size: 20px;
+}
+.register-page .bg-banner button {
+    width: 70%;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #2792d0;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 100px;
+}
+.card-answer {
+    background: #EBEBEB;
+    height: 48px;
+    margin-bottom: 12px;
+    position: relative;
+    width: 70%;
+}
+.card-answer span {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #2792D0;
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    line-height: 2;
+    text-align: center;
+    transition: 1s all;
+}
+.card-answer.true span{
+    background: #28a745;
+}
+.card-answer.false span{
+    background: #dc3545;
+}
+.card-answer.correct span {
+    background: yellow;
+}
+.card-answer.active span {
+    width: 100%;
+    transition: 1s all;
+    text-align: left;
+    text-indent: 18px;
+}
+.card-answer.active label {
+    color: #fff;
+}
+.card-answer label {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    line-height: 2;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+.question {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 25px;
+    color: #fff;
+    padding: 45% 10%;
+    line-height: 3;
+    text-align: justify;
+    font-weight: bold;
+}
+.progress-screen > div {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.score-info {
+    border-top: 5px solid #2792D0;
+    width: 70%;
+    padding-top: 50px;
+    font-size: 20px;
+    color: #2F3D4E;
+    opacity: 0.5;
+    padding-bottom: 170px;
+    position: relative;
+}
+.score-info .score {
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    font-size: 25px;
+    color: #2792d0;
+}
+.thanks {
+    color: #2792D0;
+    margin-top: 50px;
+}
+.list .row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.list .row .column {
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+    word-break: break-all;
+}
