@@ -1,0 +1,54 @@
+.registerBanner {
+	height  		: 768px;
+}
+
+.createAccount {
+	padding 		: 2rem;
+	background 		: url('./images/register_bg.png');
+	background-position: -15px 0;
+}
+
+.createAccount h2 {
+	margin-bottom 	: 2rem;
+}
+
+.createAccount input {
+	border-radius 	: 0;
+	margin-bottom 	: 0.8rem;
+	width 			: 70%;
+	margin 			: 10px auto;
+}
+.createAccount input[type="text"] {
+	background 		: #ebebeb url('./images/icon_user.svg') no-repeat 10px 10px;
+	padding-left 	: 40px;
+}
+.createAccount input[type="email"] {
+	background 		: #ebebeb url('./images/icon_email.svg') no-repeat 10px 10px;
+	padding-left 	: 40px;
+}
+.createAccount ::placeholder {
+	color 			: #bfbfbf;
+}
+.createAccount input:focus {
+	box-shadow 		: inset 0px 0px 0px 3px rgba(227,227,227,1);
+	background-color: #f0f0f0;
+	border 			: 1px solid #ced4da;
+
+}
+.createAccount hr {
+	width 			: 70%;
+	margin 			: 5rem;
+}
+
+.createAccount button {
+	width 			: 70%;
+	background-color: #2792D0;
+	border-radius 	: 0;
+}
+
+.createAccount-container {
+    position 		: absolute;
+    width 			: 100%;
+    top 			: 50%;
+    transform 		: translateY(-50%);
+}
