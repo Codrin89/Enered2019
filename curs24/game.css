@@ -8,6 +8,7 @@
 	background-position: -30px 0px;
 	background-repeat: no-repeat;
 	padding:15% 10%;
+	/*padding-bottom: 20%;*/
 }
 .main-content .account-right h1#title{
 	text-align: center;
@@ -39,7 +40,7 @@
 	font-weight: bold;
 	color: gray;
 }
-.main-content .account-right input{
+.main-content.page1 .account-right input{
 	width: 100%;
 	display: block;
 	margin-bottom: 10px;
@@ -62,10 +63,116 @@
 }
 .main-content .account-right button{
 	color: #fff;
-	/*margin-top:60%;*/
 	width: 100%;
 	height: 48px;
 	background: #2792D0;
 	outline: none;
 	border: none;
+}
+.main-content.page1 {
+	display: none;
+}
+.main-content.page2 div.pull-right .options .clicked{
+	width: 100%;
+	text-align: left;
+	padding-left: 21px;
+}
+.main-content.page2 div.pull-left {
+	position: relative;
+	overflow: hidden;
+}
+.main-content.page2 div.pull-right{
+	height: 50vh;
+	padding: 170px 64px;
+}
+.main-content.page2 input.question_banner{
+	position: absolute;
+	top:40%;
+	left:9%;
+	width: 80%;
+	height: 200px;
+	font-size: 70px;
+	color: #fff;
+	background: transparent;
+	outline: none;
+	border: none;
+}
+.main-content.page2 div.pull-right .options{
+	position: relative;
+	height: 70px;
+	width: 90%;
+	top: 38%;
+	margin: 10px 0;
+}
+.main-content.page2 div.pull-right .options:hover{
+	cursor: pointer;
+
+}
+.main-content.page2 div.pull-right .box:hover{
+	animation: clicked 0.2s linear;
+}
+.main-content.page2 div.pull-right .box{
+	display: inline-block;
+	height: 70px;
+	width: 70px;
+	background: #2792D0;
+	position: absolute;
+	text-align: center;
+	font-size: 40px;
+	color: #fff;
+	padding-top: 5px;
+}
+.main-content.page2 div.pull-right .answer{
+	display: inline-block;
+	height: 70px;
+	color: #2F3D4E;
+	width: 100%;
+	text-align: center; 
+	font-size: 30px;
+	padding-top: 15px;
+	background: #EBEBEB;
+}
+
+@keyframes clicked{
+	0%{
+		width: 0%;
+		text-align: left;
+		padding-left: 21px;
+	}
+	100%{
+		width: 100%;
+		text-align: left;
+		padding-left: 21px;
+	}
+}
+
+
+.main-content.page2 div.pull-right .nods{
+	height: 10px;
+	position: relative;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	/*margin-top: 100px;*/
+}
+.main-content.page2 div.pull-right p {
+	font-weight: bold;
+	font-size: 18px;
+}
+.main-content.page2 div.pull-right p span{
+	display: inline-block;
+	margin: 50px 0 17px 0;
+	width: 10px;
+}
+.main-content.page2 div.pull-right .nods .nod{
+	display: inline-block;
+	width: 30px;
+	height: 3px;
+	background: #bfbfbf;
+	opacity: 0.8;
+	margin: 0 2px 70px 0;
+
+}
+.main-content.page2 div.pull-right button.next{
+
 }
