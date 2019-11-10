@@ -1,3 +1,4 @@
+/* section register */
 .registerBanner {
 	height  		: 768px;
 }
@@ -51,4 +52,42 @@
     width 			: 100%;
     top 			: 50%;
     transform 		: translateY(-50%);
+}
+
+.questionCategoryImage {
+	float: right;
+}
+
+/* section question category */
+.questionCategory {
+	padding 		: 2rem;
+	background 		: url('./images/register_bg.png');
+	background-position: -15px 0;
+}
+
+.questionCategory hr {
+	width 			: 70%;
+	margin 			: 2rem auto;
+}
+
+.questionCategory button {
+	width 			: 70%;
+	background-color: #2792D0;
+	border-radius 	: 0;
+}
+
+.questionCategory input {
+	display: none;
+}
+.questionCategory label {
+	display: block;
+}
+
+.questionCategory input:checked + label {
+	color: red;
+} 
+/* global sections */
+
+.register-page {
+	display 		: none
 }
