@@ -26,31 +26,31 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 }
-.win.pair- , .active.pair-4 {
+.win.pair-4 , .active.pair-4 {
 	background-image: url('images/4.jpg');
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
-.win.pair- , .active.pair-5 {
+.win.pair-5 , .active.pair-5 {
 	background-image: url('images/5.jpg');
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
-.win.pair- , .active.pair-6 {
+.win.pair-6 , .active.pair-6 {
 	background-image: url('images/6.jpg');
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
-.active.pair- , .active.pair-7 {
+.win.pair-7 , .active.pair-7 {
 	background-image: url('images/7.jpg');
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
-.win.pair- , .active.pair-8 {
+.win.pair-8 , .active.pair-8 {
 	background-image: url('images/8.jpg');
 	background-position: center;
 	background-size: contain;

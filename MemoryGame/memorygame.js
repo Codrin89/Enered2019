@@ -27,43 +27,45 @@ function delay(milisecondDelay) {
    while(Date.now() < milisecondDelay){}
 }
 
-// var cardCounter = 0;
-// var a= -1, b= -1;
 var firstClick = true;
 var pairNumber = 1;
 var gameCards = document.getElementsByClassName('game-card');
-// gameCards = toArray(gameCards);
-// gameCards = shuffleDeck(gameCards);
+console.log("Game cards: ", gameCards);
 var newShuffledArray = [];
+console.log("Shuffled array: ", shuffledArray);
 
-for(let i = 0; i < shuffledArray.length - 1; i = i + 2) {
+for(let i = 0; i < shuffledArray.length; i = i + 2) {
 	gameCards[shuffledArray[i]].classList.add('pair-' + pairNumber);
 	gameCards[shuffledArray[i + 1]].classList.add('pair-' + pairNumber);
-	newShuffledArray.push([shuffledArray[i], shuffledArray[i + 1]]);
+	newShuffledArray.push(shuffledArray[i]);
+	newShuffledArray.push(shuffledArray[i + 1]);
 	pairNumber++;
 }
+console.log("New shuffled array: ", newShuffledArray);
 
 for (let i=0; i<gameCards.length; i++) {
 	gameCards[i].addEventListener('click', function() {
-		console.log(newShuffledArray);
-		let getPosition = this.dataset.id;
+//		console.log(newShuffledArray);
+		// let getPosition = this.dataset.id;
 		this.classList.add('active');
 		if(firstClick) {
 			firstClick = false;
 		} else {
 			// verify winning condition
-			checkWinCondition();
+			// checkWinCondition();
 			firstClick = true;
 			setTimeout(() => {
 				let activeElements = document.getElementsByClassName('active');
 				// debugger;
 				for(let i = 0; i < activeElements.length; i++) {
+					activeElements[i].classList.add('winner-pair');
 					activeElements[i].classList.remove('active');
 				}
 			}, 500);
 		}		
 	});
 }
+
 function checkWinCondition() {
 	let getElementsActive = document.getElementsByClassName('active');
 	var pair = [];
@@ -76,8 +78,6 @@ function checkWinCondition() {
 		pair[i] = parseInt(pair[i]);
 	}
 	for(let i = 0; i < newShuffledArray.length; i++) {
-		console.log(newShuffledArray[i]);
-		console.log(pair);
 		if (newShuffledArray[i] === pair) {
 			alert('ok');
 		}
