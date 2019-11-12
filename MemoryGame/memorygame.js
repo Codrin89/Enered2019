@@ -37,8 +37,7 @@ console.log("Shuffled array: ", shuffledArray);
 for(let i = 0; i < shuffledArray.length; i = i + 2) {
 	gameCards[shuffledArray[i]].classList.add('pair-' + pairNumber);
 	gameCards[shuffledArray[i + 1]].classList.add('pair-' + pairNumber);
-	newShuffledArray.push(shuffledArray[i]);
-	newShuffledArray.push(shuffledArray[i + 1]);
+	newShuffledArray.push([shuffledArray[i], shuffledArray[i + 1]]);
 	pairNumber++;
 }
 console.log("New shuffled array: ", newShuffledArray);
@@ -52,30 +51,27 @@ for (let i=0; i<gameCards.length; i++) {
 			firstClick = false;
 		} else {
 			// verify winning condition
-			// checkWinCondition();
+		    checkWinCondition();
 			firstClick = true;
 			setTimeout(() => {
 				let activeElements = document.getElementsByClassName('active');
-				// debugger;
 				for(let i = 0; i < activeElements.length; i++) {
-					activeElements[i].classList.add('winner-pair');
 					activeElements[i].classList.remove('active');
 				}
 			}, 500);
-		}		
+		}
 	});
 }
-
 function checkWinCondition() {
 	let getElementsActive = document.getElementsByClassName('active');
+	getElementsActive = toArray(getElementsActive);
+	console.log(getElementsActive);
 	var pair = [];
-	// debugger;
 	for(let i = 0; i < getElementsActive.length; i++) {
-		pair.push(getElementsActive[i].dataset.id);
-		
-	}
-	for (let i=0; i<pair.length; i++) {
+		pair.push(getElementsActive[i].dataset.id);	
 		pair[i] = parseInt(pair[i]);
+		pair[i] = pair[i];
+		console.log("Pair:", pair);	
 	}
 	for(let i = 0; i < newShuffledArray.length; i++) {
 		if (newShuffledArray[i] === pair) {

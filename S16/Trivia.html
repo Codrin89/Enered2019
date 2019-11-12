@@ -5,13 +5,13 @@
 	<link rel="stylesheet" type="text/css" href="trivia.css">
 </head>
 <body>
-	<div class="game-screen">
+	<div class="game-screen1">
 		<div class="girl">
 			<img src="images/images/register_banner.png" />
 		</div>
 		<div class="right-screen">
 			<div class="right-screen-content">
-				<h1>Create Account</h1>
+				<h1 class="question">Create Account</h1>
 				<input class="name" type="name" placeholder="Name">
 				<input class="email" type="email" placeholder="Email address">
 				<hr class="line">
@@ -19,8 +19,60 @@
 			</div>
 		</div>
 	</div>
+	<div class="game-screen2">
+		<div class="girl">		
+			<img src="images/images/question_banner.png" />
+			<h2 class="question">Era bine daca stiam ce intrebari sa pun?</h2>
+		</div>
+		<div class="right-screen">
+			<div class="right-screen-content dotted-line dotted-line-btn">
+				<p id="countdown-timer">Time left: </p>
 
-
+                <div class="card-answer">
+                    <span>A</span><label>Javascript</label>
+                </div>
+                <div class="card-answer">
+                    <span>B</span><label>Javascript</label>
+                </div>
+                <div class="card-answer">
+                    <span>C</span><label>Javascript</label>
+                </div>
+                <div class="card-answer">
+                    <span>D</span><label>Javascript</label>
+                </div>
+				
+				<hr class="line">
+				<button class="choose-category">Next question</button>
+			</div>
+		</div>
+	</div>
+	<div class="game-screen3">
+		<div class="right-screen">
+			<div class="right-screen-content dotted-line answer-select">
+                <div class="card-answer">
+                    <label class="card-button-style">Javascript
+                    	<input type="radio" name="javascript">
+                    	<span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="card-answer">
+                    <span>B</span><label>Javascript</label>
+                </div>
+                <div class="card-answer">
+                    <span>C</span><label>Javascript</label>
+                </div>
+                <div class="card-answer">
+                    <span>D</span><label>Javascript</label>
+                </div>
+				
+				<hr class="line">
+				<button class="choose-category">Play game</button>
+			</div>
+		</div>
+		<div class="girl">		
+			<img src="images/images/question_category.png" />
+		</div>
+	</div>
 
 	<script type="text/javascript" src ="trivia.js"></script>
 </body>
