@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+</head>
+<body>
+        <section id="game1" class="register-page">
+            <div class="register-container">
+                <img src="images/register_banner.png" />
+            </div>
+            <div class="register-container bg-banner text-center">
+                <h3>Please fill out some information</h3>
+                <input type="text" class="input-user" id="name" placeholder="Name"/>
+                <input type="text" class="input-email" id="email" placeholder="Email"/>
+                <input type="number" class="input-phone" id="phone" placeholder="Telephone"/>
+                <button id="button-submit">Proceed to game</button>
+            </div>
+        </section>
+        <section id="game2" class="register-page">
+            <div class="register-container">
+                <img src="images/question_banner.png" />
+                <div id="question" class="question">
+                        In which of the following, Documents, Movies, Images and Photographs etc. are stored ?
+                </div>
+            </div>
+            <div class="register-container bg-banner text-center">
+                <div class="progress-screen">
+                    <div id="progress"></div>
+                </div>
+                <div class="card-answer">
+                    <span>A</span><label>Javascript</label>
+                </div>
+                <div class="card-answer">
+                    <span>B</span><label>Javascript</label>
+                </div>
+                <div class="card-answer">
+                    <span>C</span><label>Javascript</label>
+                </div>
+                <div class="card-answer">
+                    <span>D</span><label>Javascript</label>
+                </div>
+                <button id="button-next" class="button-next">Submit question !?</button>
+            </div>
+        </section>
+        <section id="game3" class="register-page">
+            <div class="register-container">
+                <img src="images/question_banner.png" />
+                <div class="question">
+                        Here is your score!
+                </div>
+            </div>
+            <div class="register-container bg-banner text-left ">
+                <div class="score-info">
+                    <p id="name-info" class="name">Codrin</p>
+                    <p id="email-info" class="email">test@test.com</p>
+                    <p id="phone-info" class="phone">120323589434</p>
+                    <p id="score-info" class="score"></p>
+                </div>
+                <p>Thank you for playing!</p>
+                <button id="reset">Start new game!</button>
+            </div>
+        </section>
+    <script src='main.js'></script>
+</body>
+</html>
+

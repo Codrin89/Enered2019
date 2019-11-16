@@ -1,13 +1,33 @@
-.game-screen1 > div {
+/*.game-screen1 > div {
 	float: left;
 	display: none;
 }
 .game-screen2 > div {
 	float: left;
 	display: none;
+	
 }
 .game-screen3 > div {
 	float: left;
+	display: none;
+}
+.game-screen1.show > div {
+	float: left;
+}
+.game-screen2.show > div {
+	float: left;
+	
+}
+.game-screen3.show > div {
+	float: left;
+}*/
+.register-page {
+	float: left;
+	display: none;
+}
+.register-page.show {
+	float: left;
+	display: block;
 }
 .girl {
 	width: 50%;
@@ -134,5 +154,12 @@
 	background-color: blue;
 	position: relative;
 	top: -10px;
-
+}
+.progress-screen > div {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
 }
