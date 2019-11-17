@@ -2,11 +2,18 @@ var url = "https://cors-anywhere.herokuapp.com/https://feelittrivia.herokuapp.co
 
 var question = [];
 var currentQuestion = 0;
+var score = 0;
 function initGame() {
 	let sections = document.getElementsByClassName('register-page');
 	for(let i = 0; i < sections.length; i++) {
 		sections[i].classList.remove('show');
 	}
+	document.getElementById("name").value = '';
+	document.getElementById("email").value = '';
+	document.getElementById("phone").value = '';
+	questions = [];
+	currentQuestion = 0;
+	score = 0;
 	document.getElementById('game1').classList.add('show');
 }
 initGame();
@@ -41,8 +48,21 @@ function startGame() {
 	document.getElementById('game2').classList.add('show')
 	renderQuestion(0);
 }
+function finishGame() {
+	document.getElementById('game2').classList.remove('show');
+	document.getElementById('game3').classList.add('show')
+	let userData = JSON.parse(localStorage.getItem('Data'));
+	document.getElementById('name-info').innerHTML = userData.username;
+	document.getElementById('email-info').innerHTML = userData.email;
+	document.getElementById('phone-info').innerHTML = userData.phone;
+	document.getElementById('score-info').innerHTML = score + '/10';
+}
 
 function renderQuestion(position) {
+	if(position > 9) {
+		finishGame();
+		return;
+	}
 	var myCurrentQuestion = questions[position];
 	document.getElementById('question').innerHTML = myCurrentQuestion.question;
 	var answers = document.querySelectorAll('.card-answer label');
@@ -62,15 +82,39 @@ for(let i = 0; i < questionOptions.length; i++) {
 }
 
 document.getElementById('button-next').addEventListener('click', function() {
+	let answerCards = document.getElementsByClassName('card-answer')
 	if(document.querySelector('.card-answer.active')) {
-		var answer = document.querySelector('.card-answer.active label').innerHtml;
+		var answer = document.querySelector('.card-answer.active label').innerHTML;
 		if(answer === questions[currentQuestion].correctAnswer) {
-			alert('correct answer');
+			document.querySelector('.card-answer.active').classList.add('true')
+			setTimeout(function() {
+				for(let i = 0; i < answerCards.length; i++) {
+					answerCards[i].classList.remove('active')
+					answerCards[i].classList.remove('true')
+					answerCards[i].classList.remove('false')
+				}
+				score += 1;
+				currentQuestion += 1;
+				renderQuestion(currentQuestion);
+			}, 2000);
 		} else {
-			alert('incorrect answer');
+			setTimeout(function() {
+				for(let i = 0; i < answerCards.length; i++) {
+					answerCards[i].classList.remove('active')
+					answerCards[i].classList.remove('true')
+					answerCards[i].classList.remove('false')
+				}
+				currentQuestion += 1;
+				renderQuestion(currentQuestion);
+			}, 2000);
+			document.querySelector('.card-answer.active').classList.add('false')
+			
 		}
 	} else {
 		alert('select an answer');
 	}
 
+});
+document.getElementById('reset').addEventListener('click', function() {
+	initGame();
 });
