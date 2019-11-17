@@ -1,13 +1,20 @@
 var url = "https://cors-anywhere.herokuapp.com/https://feelittrivia.herokuapp.com/upload"
 var questions = [];
 var currentQuestion = 0;
+let score = 0;
 
 function initGame() {
 	let sections = document.getElementsByClassName('register-page');
 	for (let i=0; i<sections.length; i++) {
 		sections[i].classList.remove('show');
 	}
+	var questions = [];
+	var currentQuestion = 0;
+	let score = 0;
 	document.getElementById('game1').classList.add('show');
+	document.getElementById('name').value = '';
+	document.getElementById('email').value = '';
+	document.getElementById('phone').value = '';
 }
 initGame();
 
@@ -20,10 +27,6 @@ document.getElementById('button-submit').addEventListener('click', function() {
 	console.log(data);
 	localStorage.setItem('trivia-info', JSON.stringify(data));
 	getData();
-
-
-
-
 });
 
 function getData() {
@@ -47,8 +50,21 @@ function startGame() {
 	document.getElementById('game2').classList.add('show');
 	renderQuestion(currentQuestion);
 }
+function finishGame() {
+	document.getElementById('game2').classList.remove('show');
+	document.getElementById('game3').classList.add('show');
+	let userData = JSON.parse(localStorage.getItem('trivia-info'));
+	document.getElementById('name-info').innerHTML = userData.username;
+	document.getElementById('email-info').innerHTML = userData.email;
+	document.getElementById('phone-info').innerHTML = userData.phone;
+	document.getElementById('score-info').innerHTML = score + '/10'; 
+}
 
 function renderQuestion(position) {
+	if(position>9) {
+		finishGame();
+		return;
+	}
 	var myCurrentQuestion = questions[position];
 	document.getElementById('question').innerHTML = myCurrentQuestion.question;
 	var answers = document.querySelectorAll('.card-answer label');
@@ -67,19 +83,51 @@ for (let i=0; i<questionOptions.length; i++) {
 	});
 }
 document.getElementById('button-next').addEventListener('click', function(){
+	let answerCard = document.getElementsByClassName('card-answer');
 	if(document.querySelector('.card-answer.active')) {
 		var answer = document.querySelector('.card-answer.active label').innerHTML;
 		if (answer === questions[currentQuestion].correctAnswer) {
-			alert('correct answer');
+			document.querySelector('.card-answer.active').classList.add('true');
+			setTimeout(function() {
+				for(let i=0; i<answerCard.length; i++) {
+					answerCard[i].classList.remove('active');
+					answerCard[i].classList.remove('false');
+					answerCard[i].classList.remove('true');
+				}
+				score += 1;
+				currentQuestion += 1;
+				renderQuestion(currentQuestion);
+
+			}, 2000);
 		} else {
-			alert('wrong answer');
+			document.querySelector('.card-answer.active').classList.add('false');
+			setTimeout(function() {
+				for(let i=0; i<answerCard.length; i++) {
+					answerCard[i].classList.remove('active');
+					answerCard[i].classList.remove('false');
+					answerCard[i].classList.remove('true');
+				}
+				currentQuestion += 1;
+				renderQuestion(currentQuestion);
+
+			}, 2000);
 		}
 	} else {
 		alert('select an answer');
 	}
 });
 
+document.getElementById('reset').addEventListener('click', function() {
+	initGame();
+});
+
 
 /*XHR 
 connect to endpoint
-readystate*/
+readystate
+
+
+bubble sort
+divide et impera
+turnurile din hanoi
+quick sort*/

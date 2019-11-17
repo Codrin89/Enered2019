@@ -170,3 +170,9 @@ body {
     border-bottom: 1px solid black;
     word-break: break-all;
 }
+.true {
+    background-color: yellow;
+}
+.false {
+    background-color: red;
+}
