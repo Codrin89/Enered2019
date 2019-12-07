@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: blue; 
+}
+.login-container {
+	background-color: white;
+	color: blue;
+	text-align: center;
+	width: 400px;
+	margin: 10% auto 0;
+	padding: 40px 0;
+}
+.login-container input {
+	border: none;
+	border-bottom: 1px solid #222;
+	outline: none;
+	color: #999;
+	margin-bottom: 30px;
+	font-size: 16px;
+}
+.login-container button {
+	background-color: #315EC6;
+	color: #fff;
+	font-weight: bold;
+	padding: 12px 20px;
+	border: none;
+	outline: none;
+	font-size: 20px;
+}
