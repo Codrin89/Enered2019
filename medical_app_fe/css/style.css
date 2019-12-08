@@ -1,0 +1,50 @@
+@font-face {
+	font-family: 'RobotoBlack';
+	src: url('../fonts/Roboto-Black.ttf');
+}
+
+@font-face {
+	font-family: 'RobotoBold';
+	src: url('../fonts/Roboto-Bold.ttf');
+}
+@font-face {
+	font-family: 'RobotoRegular';
+	src: url('../fonts/Roboto-Regular.ttf');
+}
+@font-face {
+	font-family: 'RobotoLight';
+	src: url('../fonts/Roboto-Light.ttf');
+}
+@font-face {
+	font-family: 'RobotoThin';
+	src: url('../fonts/Roboto-Thin.ttf');
+}
+@font-face {
+	font-family: 'RobotoMedium';
+	src: url('../fonts/Roboto-Medium.ttf');
+}
+.robotoBlack {
+	font-family: 'RobotoBlack';
+}
+.robotoBold {
+	font-family: 'RobotoBold';
+}
+.robotoRegular {
+	font-family: 'RobotoRegular';
+}
+.robotoThin {
+	font-family: 'RobotoThin';
+}
+.robotoLight {
+	font-family: 'RobotoLight';
+}
+.robotoMedium {
+	font-family: 'RobotoMedium';
+}
+
+.btn-login {
+
+}
+.container-homepage {
+	background-image: url('images/homepagebackground.png');
+}
