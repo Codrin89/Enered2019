@@ -42,9 +42,12 @@
 	font-family: 'RobotoMedium';
 }
 
-.btn-login {
-
-}
 .container-homepage {
-	background-image: url('images/homepagebackground.png');
+	background-image: url('../images/homepagebackground.png.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 100%;
+	min-width: 100%;
+
 }
