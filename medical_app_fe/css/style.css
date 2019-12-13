@@ -41,10 +41,43 @@
 .robotoMedium {
 	font-family: 'RobotoMedium';
 }
-
 .container-homepage {
 	background-image: url('../images/homepagebackground.png.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	opacity: 0.66;
+	display: flex;
+	flex-direction: column;
+}
+.prettyline {
+	border: 3px solid #DDFFE7;
+	border-radius: 5px;
+	margin: 0 21.73%;
+	position: relative;
+	top: -190px;
+  }
+.btn-login {
+	background-color: #DDFFE7;
+	color: #29A0B1;
+	border: none;
+	padding: 3.57% 0;
+	margin: 0 21.73%;
+	margin-top: 26.33%;
+	border-radius: 50px;
+	border-top-left-radius: 0;
+	font-size: 20px;
+	font-family: 'RobotoMedium';
+}
+.btn-register {
+	border: 2px solid #DDFFE7;
+	color: #DDFFE7;
+	background: none;
+	margin: 4.12% 21.73%;
+	margin-bottom: 9.82%;
+	padding: 3.57% 0;
+	border-radius: 50px;
+	border-top-right-radius: 0;
+	font-size: 20px;
+	font-family: 'RobotoMedium';
 }
