@@ -2,7 +2,7 @@
 
 
     it('should ago to main page', () => {    
-        cy.visit('http://ngen-bo-dev.feelit.iasi.net/login') 
+        cy.visit('http://ngen-bo-dev.feelit.iasi.net/login')
         cy.get('#inputUsername').type('test.test')
         cy.get('#inputPassword').type('Parola123+{enter}')
 
