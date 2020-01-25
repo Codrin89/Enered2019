@@ -1,0 +1,192 @@
+-> Which attribute tells the browser where to go when a hyperlink is clicked ? (<a>) href
+
+-> What is the mandatory attribute for inputs ? <input type= "" >
+
+-> Write a basic structure of HTML ( only main tags, should contain <html> <head> <body> <link> <script> )
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="index.css">
+
+ </head>
+<body>
+
+
+
+<script src="index.js"></script>
+</body>
+
+<html>
+
+-> Explain why you choose this structure for the above exercises
+
+
+<!DOCTYPE html> -> indica browserului ca acest document este HTML 5
+
+<head> este urmatorul. In el se poate pune title (care va fi numele tabului in browser). Tot in head se poate introduce meta.
+In head punem linkul catre css deoarece el trebuie sa se incarce primul, iar scriptul il punem la finalul body ului doarece trebuie sa se incarce ultimul.
+Este important ca mai intai sa se incarce continutul si apoi functionalitatea.
+ 
+
+-> Please write below the CSS property padding in 3 different ways
+
+padding-top
+padding-left
+padding-right
+
+padding: 20px;
+padding: 15px 30px;
+padding: 18 px 23px 33px 55px;
+
+
+
+-> Give an example of how to write a border on an element
+
+border: 20 px solid red;
+border-radius: 20px;
+
+
+-> What is the difference between visibility: hidden and display: none
+
+visibility: hidden -> acel element este invizibil dar el exista, iar celelalte elemente nu ii vor ocupa locul
+display:none -> acel element nu exista, iar celelalte elemente vor umple spatiul liber
+
+-> How do you set the color and the size of this text : <p class="paragraph">This is a text.</p>
+
+p {
+
+	color: red;
+	font-size: 30px;
+}
+
+
+
+
+
+-> Explain in a few words, with examples, what does the CSS property position does.
+
+Position ne ajuta sa pozitionam elementele in pagina web. Ele  by default se pozitioneaza in ordinea in care sunt scrise. 
+Avem mai multe tipuri de position:
+
+Static -> toate elementele by default au position static.
+Relative -> se seteaza cu top, bottom, left, right
+Absolut -> se seteaza cu top, bottom, left, right
+Fixed -> mentine fix acel element in pagina chit ca dam scroll. ex: navigation bar
+Sticky -> elementul ramane "lipit" intr o anumita pozitie in pagina
+
+
+-> Write below, 3 ways to target the following element: <p id="one" class="two">This is a text.</p>
+
+1.   p {
+
+        }
+
+2.   #one {
+
+	}
+
+
+3.   .two {
+
+	}
+
+
+
+-> Write below a way to select the following element, using both classes: <button class="btn red">Click me!</button>
+
+	.btn.red {
+	
+	}
+
+
+
+-> Which background color will the following element have?
+p {
+	background: purple;
+	background-color: green;
+	color: red;
+}
+
+-> Explain in a few words ( or maybe draw ) what is a box-model.
+
+	
+Fiecare element este vazut de browser ca o cutie.
+Aceasta cutie este formata (de la interior spre exterior) din:  
+
+1. Content -> continutul efectiv
+2. Padding -> este spatiul din interiorul elementului, si atunci cand il marim, marim spatiul clickable
+3. Border - > spatiul dintre padding si margin, este marginea efectiva a elementului
+4. Margin - > acesta este spatiul din exteriorul elementului si impinge celelalte elemente la distanta
+
+
+-> How do you declare a variable in javascript (3 ways) ?
+
+	var x = 5;
+	var x;
+let x = 4;
+const x = 2;
+	
+
+-> What is the diference between "==" and "===" ?
+
+== -> compara valoarea 
+=== -> compara tipul si valoarea
+
+-> What is document in javascript ?
+
+Document este pagina web pe care o vede browserul in js. El ia din acel document toate informatiile necesare. DOM -> document object model
+
+-> What is window in javascript ?
+
+-> What are the data types in javascript ?
+
+1. String
+2. Boolean
+3. Array
+4. Function
+5. Object
+
+
+
+-> What would be the result of 3+2+"7" in javascript?
+
+5 se va concatena cu string 7 -> 57
+
+
+-> Explain some javascript contructs and what they do (e.g. if, for, while, switch etc.).
+
+if { cod...
+	}
+	
+else {
+	}
+
+daca conditia dupa if este adevarata atunci sa se execute, in caz contrar sa se execute conditia de la else.
+
+
+-> What is a javascript function ?
+
+O functie reprezinta o functionalitate care  poate fi facuta in  js, si care se executa in 3 situatii: cand o apelam noi, cand o apeleaza browserul, cand o apeleaza ceva extern.
+
+-> Write a javascript function that will receive 2 parameters and will return/output the result of their sum, validation included.
+
+	function (2, 3);
+	
+	return 2+3
+
+function sum(a, b) {
+	return a+b;
+}
+	
+
+-> Write a javascript function that will receive a parameter as a number "n" and return the sum of "1^1 + 2^2 + .... + n^n".
+	
+	math.pow(1, n);
+	return (1,n);
+
+BONUS!!! Write a javascript function that will receive an array of numbers (e.g [1, 4, 2, 9, 0, 3, 8, 6, 4, 5, 1, 3, 3, 7]) as a parameter and it will return the array sorted ascending.
+
+BONUS!!! Write a javascript function that will receive an string as a parameter and return a boolean which is true if the string is a palindrome.
