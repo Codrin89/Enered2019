@@ -1,0 +1,176 @@
+-> Which attribute tells the browser where to go when a hyperlink is clicked ? (<a>)
+	href
+
+-> What is the mandatory attribute for inputs ?
+	type
+
+-> Write a basic structure of HTML ( only main tags, should contain <html> <head> <body> <link> <script> )
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="....">
+</head>
+<body>
+	<script type="text/javascript" src="...."></script>
+
+</body>
+</html>
+
+-> Explain why you choose this structure for the above exercises
+tag-ul de <html> cuprinde tot continutul fisierului; <head> cuprinde titlu paginii, care se afla mereu in head si care nu apare in pagina. Tot in <head> avem si fisierele .css, cu tag-ul <link>
+<body> contine elementele vizibile in pagina
+<script> contine fisierele care dau funcitonalitatea. Se adauga la sfarsit pentru ca toate elementele sa fie randate si sa le poate manipula
+
+-> Please write below the CSS property padding in 3 different ways
+	padding: 10px;
+	padding: 10px 20px;
+	padding: 5px 10px 5px 10px;
+	padding-top: 3%;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10rem;
+
+-> Give an example of how to write a border on an element
+	border: 1px solid black;
+	border-top: 2px;
+	border-bottom: 1px solid #45585b;
+
+-> What is the difference between visibility: hidden and display: none
+	visibility: hidden --> elementul isi pastreaza pozitia in pagina, doar isi pierde vizibilitatea. Este echivalent cu opacity: 0
+	visibility: none --> elementul nu mai este preent in pagina si nu are dimensiuni
+
+-> How do you set the color and the size of this text : <p class="paragraph">This is a text.</p>
+	.paragraph {
+		color: blue;
+		font-size: 14px;
+	}
+
+-> Explain in a few words, with examples, what does the CSS property position does.
+	Elementul position ne pozitioneaza elementele in pagina. Are mai multe proprietati:
+	Position static e valoarea default, elementele sunt randate in ordinea in care apar in document
+	Position absolut ne pozitioneaza elementul relativ cu primul elementparinte pozitionat altfel decat static al acestuia
+	Position relative pozitioneaza elementul relativ cu pozitia sa normala
+	Position fixed pozitioneaza elementul relativ cu fereastra browser-ului
+	Position sticky pozitioneaza in raport cu scroll-ul utilizatorului
+
+-> Write below, 3 ways to target the following element: <p id="one" class="two">This is a text.</p>
+	p {
+
+	}
+
+	.two {
+
+	}
+
+	#one {
+
+	}
+
+-> Write below a way to select the following element, using both classes: <button class="btn red">Click me!</button>
+	.btn.red {
+
+	}
+
+-> Which background color will the following element have?
+p {
+	background: purple;
+	background-color: green;
+	color: red;
+}
+	green
+
+-> Explain in a few words ( or maybe draw ) what is a box-model.
+	Cand facem hover peste un element interiorul lui este albastru. Acesta este content-ul.
+	Padding-ul modifica continutul elementului si impinge continutul spre interior
+	Border  mareste continutul ca si padding; este ca un chenar
+	Margin nu modifica, ci repozitioneaza; il folosim cand avem nevoie de spatiu intre elemente
+
+-> How do you declare a variable in javascript (3 ways) ?
+	var x=5;
+	let y;
+	const a=10;
+
+-> What is the diference between "==" and "===" ?
+	"==" compara doar valoarea, "===" compara si tipul de data si valoarea
+
+-> What is document in javascript ?
+	Reprezinta intreg documentul html
+
+-> What is window in javascript ?
+	Reprezinta fereastra browser-ului
+
+-> What are the data types in javascript ?
+	number
+	string
+	boolean
+	array
+	object
+	null
+	undefined
+
+-> What would be the result of 3+2+"7" in javascript?
+	57
+
+-> Explain some javascript contructs and what they do (e.g. if, for, while, switch etc.).
+	if (condition) {
+	...........
+	} else {
+	..........
+	}
+If e un contructor de decizie. Daca conditia este indeplinita, se executa prima bucata de cod, iar in caz contrar se executa cod-ul din else
+
+	for (start point; end point; step) {
+	......................
+	}
+For este un contructor pentru loop; codul din interior se executa cat timp conditia este adevarata
+While este similar cu un for, difera structura
+	while (condition) {
+	............
+}
+Switch este asemanator unui if, dar il folosim cand avem mai multe ramuri de else
+Do...while este un while in care conditia se evalueaza la final
+
+-> What is a javascript function ?
+	O functie javascript este o constructie care cuprinde cuvantul functie, numele acesteia, parametri si codul din interiorul functiei. Fiecare functie are un anumit scop s prin apelare poate fi folosit de mai multe ori
+
+-> Write a javascript function that will receive 2 parameters and will return/output the result of their sum, validation included.
+
+var Sum = 0;
+
+function Suma(param1, param2) {
+	if((parseInt(param1)===param1)&&(parseInt(param2)===param2)) {
+	Sum = param1 + param2;
+	} else {
+	Sum = "not numbers"; }
+	return Sum;
+}
+console.log(Suma(2, "5"));
+
+-> Write a javascript function that will receive a parameter as a number "n" and return the sum of "1^1 + 2^2 + .... + n^n".
+function SumPower(n) {
+	var Power =0;
+	for (let i=1; i<=n; i++) {
+		Power+= Math.pow(i,i);
+	}
+	return Power;
+}
+console.log(SumPower(1));
+console.log(SumPower(2));
+console.log(SumPower(3));
+
+BONUS!!! Write a javascript function that will receive an array of numbers (e.g [1, 4, 2, 9, 0, 3, 8, 6, 4, 5, 1, 3, 3, 7]) as a parameter and it will return the array sorted ascending.
+function SortArray(param) {
+	SortedArray=param.sort();
+	return SortedArray;
+}
+console.log(SortArray([1, 4, 2, 9, 0, 3, 8, 6, 4, 5, 1, 3, 3, 7]));
+
+BONUS!!! Write a javascript function that will receive an string as a parameter and return a boolean which is true if the string is a palindrome.
+function Palindrome(param) {
+	if (param == (param.split("").reverse().join(""))) {
+		return 1;
+	} else {
+		return 0;
+	}
+}
